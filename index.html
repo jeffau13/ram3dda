@@ -3,8 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>jQuery lightGallery demo</title>
-    <link href="/lib/css/lightgallery.css" rel="stylesheet" />
+    <link href="lib/css/lightgallery.css" rel="stylesheet" />
+
     <style>
+      .thumbnailz {
+        width: 300px;
+        height: 180px;
+      }
       body {
         background-color: #152836;
       }
@@ -125,7 +130,7 @@
     </style>
   </head>
   <body class="home">
-    <div class="demo-gallery">
+    <!-- <div class="demo-gallery">
       <ul id="lightgallery" class="list-unstyled row">
         <li
           class="col-xs-6 col-sm-4 col-md-3"
@@ -179,18 +184,46 @@
             <img class="img-responsive" src="img/thumb-4.jpg" alt="Thumb-4" />
           </a>
         </li>
-      </ul>
+      </ul> -->
+    <!-- </div> -->
+    <div id="thumbs">
+      <a href="assets/img/siege/ASH/ASH4K.jpg">
+        <img class="thumbnailz" src="assets/img/siege/ASH/ASH4K.jpg" />
+      </a>
+
+      <a href="assets/img/siege/BUCK/4KBUCKLANDSCAPE1.jpg">
+        <img
+          class="thumbnailz"
+          src="assets/img/siege/BUCK/4KBUCKLANDSCAPE1.jpg"
+        />
+      </a>
+      <a href="assets/img/siege/ASH/ASH4K.jpg">
+        <img class="thumbnailz" src="assets/img/siege/ASH/ASH4K.jpg" />
+      </a>
     </div>
     <!-- <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script> -->
-    <script src="/lib/js/lightgallery.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/lightgallery-all-min.js"></script>
+    <!-- <script src="/lib/js/lg-thumbnail.min.js"></script> -->
+    <!-- <script src="/lib/js/lg-thumbnail.min.js"></script> -->
     <!-- <script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
     <script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
     <script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
     <script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
     <script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
     <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script> -->
-    <script>
-      lightGallery(document.getElementById("lightgallery"));
+    <!-- <script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-thumbnail.js"></script> -->
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#thumbs").lightGallery({
+          thumbnail: false
+        });
+      });
     </script>
   </body>
 </html>
