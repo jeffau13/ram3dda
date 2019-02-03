@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Siege Series</title>
+  <link rel="shortcut icon" href="assets/avatar/favicon-32x32.png" type="image/x-icon"/>
+  <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+  <style>
+
+    h1{
+      font-family: 'Roboto Mono', monospace;
+      font-size: 2.5em;
+      
+    }
+    
+    h4,p{
+      font-family: 'Roboto Mono', monospace;
+    }
+    /* .wrapper{
+      
+      display: grid;
+      grid-template-columns: 100px 9fr 100px;
+      margin: 2% 0% 0% 10px;
+    } */
+    .albumTitle{
+      color:white;
+      
+    }
+
+
+    
+    #imgwall {
+        
+        display:grid;
+        /* grid-template-columns: repeat(auto-fill,minmax(50%,1fr)); */
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        grid-gap: 0px;
+        /* margin: 0% 5%; */
+        grid-template-rows: auto, 2fr;
+        
+      }
+    .thumbnails{
+      width:100%;
+      margin: 0px 0px;
+      padding: 0px 0px;
+      vertical-align:bottom;
+      height:300px;
+      object-fit:cover;
+
+    }
+    .tempsidebar{
+      margin-right :10px;
+    }
+      body {
+        background-color: #1a1a1a;
+      }
+    
+    
+
+      
+
+      .caption{
+        display: none;
+        
+      }
+
+      /* responsive: */
+
+      /* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 800px) {
+#imgwall {
+        
+        display:grid;
+        /* grid-template-columns: repeat(auto-fill,minmax(50%,1fr)); */
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        grid-gap: 0px;
+        /* margin: 0% 5%; */
+        /* grid-template-rows: auto, 2fr; */
+        
+      }
+
+      .thumbnails{
+      width:100%;
+      margin: 0px 0px;
+      padding: 0px 0px;
+      vertical-align:bottom;
+      height:200px;
+      object-fit:cover;
+
+    }
+}
+    </style>
+
+
+
+
+</head>
+
+<body>
+  <!-- <div class="wrapper">
+  <div class ="tempsidebar">
+  <h1 class="albumTitle"> Siege Series</h1>
+    </div> --> -->
+
+
+  <div id="imgwall">
+     
+    <a class="alink" href="assets/img/siege/landscape/hibana.jpg" data-sub-html=".caption">
+      <img class="thumbnails" src="assets/img/siege/landscape/hibana.jpg" />
+      <div class="caption">
+        <h4>Caption1</h4>
+        <p>Desc1</p>
+      </div>
+    </a>
+
+
+
+
+    <a class="alink" href="assets/img/siege/landscape/bandit.jpg" data-sub-html=".caption">
+      <img class="thumbnails" src="assets/img/siege/landscape/bandit.jpg" />
+      <div class="caption">
+        <h4>Caption1</h4>
+        <p>Desc1</p>
+      </div>
+    </a>
+
+    <a class="alink" href="assets/img/siege/landscape/valkyrie.jpg" data-sub-html=".caption">
+      <img class="thumbnails" src="assets/img/siege/landscape/valkyrie.jpg" />
+      <div class="caption">
+        <h4>Caption1</h4>
+        <p>Desc1</p>
+      </div>
+
+    </a>
+
+    <a class="alink" href="assets/img/siege/landscape/vigil.jpg" data-sub-html=".caption">
+      <img class="thumbnails" src="assets/img/siege/landscape/vigil.jpg" />
+      <div class="caption">
+        <h4>Caption1</h4>
+        <p>Desc1</p>
+      </div>
+
+    </a>
+
+    <a class="alink" href="assets/img/siege/landscape/buck.jpg" data-sub-html=".caption">
+      <img class="thumbnails" src="assets/img/siege/landscape/buck.jpg" />
+      <div class="caption">
+        <h4>Caption1</h4>
+        <p>Desc1</p>
+      </div>
+    </a>
+
+    <a class="alink" href="assets/img/siege/landscape/buck2.png" data-sub-html=".caption">
+      <img class="thumbnails" src="assets/img/siege/landscape/buck2.png" />
+      <div class="caption">
+        <h4>Caption1</h4>
+        <p>Desc1</p>
+      </div>
+    </a>
+
+
+
+    <a class="alink" href="assets/img/siege/landscape/jager.jpg" data-sub-html=".caption">
+      <img class="thumbnails" src="assets/img/siege/landscape/jager.jpg" />
+      <div class="caption">
+        <h4>Caption1</h4>
+        <p>Desc1</p>
+      </div>
+    </a>
+
+   
+
+    <a class="alink" href="assets/img/siege/landscape/kapkan.jpg" data-sub-html=".caption">
+      <img class="thumbnails" src="assets/img/siege/landscape/kapkan.jpg" />
+      <div class="caption">
+        <h4>Caption1</h4>
+        <p>Desc1</p>
+      </div>
+
+    </a>
+
+  <!-- </div> -->
+
+  </div>
+
+
+  <!-- end  -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <script src="js/lightgallery-all-min.js"></script>
+
+  <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+  <!-- lightgallery plugins -->
+  <!-- <script src="js/lg-thumbnail.min.js"></script> -->
+  <script src="js/lg-fullscreen.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#imgwall").lightGallery({
+        thumbnail: true,
+        showThumbByDefault: false,
+        fullScreen: true,
+        hideBarsDelay: 1500,
+        mousewheel: false,
+        subHtmlSelectorRelative: true
+      });
+    });
+  </script>
+</body>
+</body>
+
+</html>
