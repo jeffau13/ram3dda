@@ -14,6 +14,7 @@
     h1{
       font-family: 'Roboto Mono', monospace;
       font-size: 2.5em;
+      color:papayawhip;
       
     }
     
@@ -113,11 +114,25 @@
       margin: 0px 0px;
       padding: 0px 0px;
       vertical-align:bottom;
-      height:600px;
+      height:550px;
       object-fit:cover;
 
     }
 
+}
+
+/* for large screens */
+@media screen and (min-width: 2000px) {
+    
+    #wrapper {
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+    }
+    .thumbnails{
+      max-width:1000px;
+    }
 }
     </style>
 
@@ -127,11 +142,9 @@
 </head>
 
 <body>
-  <!-- <div class="wrapper">
-  <div class ="tempsidebar">
-  <h1 class="albumTitle"> Siege Series</h1>
-    </div> --> -->
-
+  <div id="wrapper">
+ 
+<h1>test text</h1>
 
   <div id="imgwall">
      
@@ -209,9 +222,12 @@
 
     </a>
 
-  <!-- </div> -->
-
   </div>
+<!-- End Imgwall -->
+
+
+  </div> 
+<!-- ^ End Wrapper -->
 
 
   <!-- end  -->
