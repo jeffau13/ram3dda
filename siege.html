@@ -37,7 +37,7 @@
     #imgwall {
         
         display:grid;
-        /* grid-template-columns: repeat(auto-fill,minmax(50%,1fr)); */
+        /* grid-template-columns: repeat(auto-fill,min`(50%,1fr)); */
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         grid-gap: 0px;
@@ -50,7 +50,7 @@
       margin: 0px 0px;
       padding: 0px 0px;
       vertical-align:bottom;
-      height:350px;
+      height:550px;
       object-fit:cover;
 
     }
@@ -97,7 +97,7 @@
     }
 }
 /* mid */
-@media (min-width: 1000px){
+@media (max-width: 2560px){
   #imgwall {
         
         display:grid;
