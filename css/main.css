@@ -1,0 +1,107 @@
+h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 2.5em;
+  color: papayawhip;
+}
+
+h4,
+p {
+  font-family: "Roboto Mono", monospace;
+}
+/* .wrapper{
+    
+    display: grid;
+    grid-template-columns: 100px 9fr 100px;
+    margin: 2% 0% 0% 10px;
+  } */
+.albumTitle {
+  color: white;
+}
+
+#imgwall {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill,minmax(50%,1fr)); */
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  grid-gap: 0px;
+  /* margin: 0% 5%; */
+  grid-template-rows: auto, 2fr;
+}
+.thumbnails {
+  width: 100%;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  vertical-align: bottom;
+  height: 350px;
+  object-fit: cover;
+}
+.tempsidebar {
+  margin-right: 10px;
+}
+body {
+  background-color: #1a1a1a;
+}
+
+.caption {
+  display: none;
+}
+
+/* responsive: */
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 1200px) {
+  #imgwall {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill,minmax(50%,1fr)); */
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-gap: 0px;
+    /* margin: 0% 5%; */
+    /* grid-template-rows: auto, 2fr; */
+  }
+
+  .thumbnails {
+    width: 100%;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    vertical-align: bottom;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+/* desktop or bigger screens */
+@media (min-width: 1200px) {
+  #imgwall {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill,minmax(50%,1fr)); */
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 0px;
+    /* margin: 0% 5%; */
+    grid-template-rows: auto, 2fr;
+  }
+  .thumbnails {
+    width: 100%;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    vertical-align: bottom;
+    height: 550px;
+    object-fit: cover;
+  }
+}
+
+/* for large screens */
+@media screen and (min-width: 3000px) {
+  #wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .thumbnails {
+    max-width: 1920px;
+  }
+  #imgwall {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
