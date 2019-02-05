@@ -16,7 +16,6 @@ $(document).ready(function() {
     mousewheel: false,
     subHtmlSelectorRelative: true,
     counter: false,
-    animateThumb: false,
-    zoom: false
+    animateThumb: false
   });
 });
