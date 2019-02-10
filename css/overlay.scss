@@ -1,0 +1,160 @@
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 2em;
+  a {
+    font-family: 'Roboto';
+    color: white;
+    font-size: 2em;
+    margin-top: 10px;
+  }
+  a:hover {
+    border-top: 5px solid white;
+  }
+  .menu-btn {
+    width: 40px;
+    float: left;
+    cursor: pointer;
+  }
+}
+nav {
+  font-family: 'Roboto';
+  // position: absolute;
+  background: black;
+  padding: 2em;
+  transform: scaleX(0);
+  width: calc(100% - 4em);
+  height: calc(100vh - 4em);
+  display: none;
+  transform-origin: left;
+
+  .close-btn {
+    position: absolute;
+    width: 40px;
+    float: left;
+    cursor: pointer;
+    opacity: 0;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    list-style-type: none;
+    margin: 300px auto;
+    padding: 0;
+    grid-gap: 10px;
+
+    a {
+      color: white;
+      font-weight: bold;
+      font-size: 2em;
+    }
+    a:hover {
+      border-top: 5px solid white;
+    }
+
+    span {
+      color: gray;
+      display: block;
+      font-size: 1em;
+      margin-top: 20px;
+      border-top: 1px solid gray;
+    }
+    li {
+      opacity: 0;
+      animation: menu-item-anim 0.5s forwards 0.2s ease-in-out;
+      margin-bottom: 50px;
+    }
+  }
+}
+#contacts {
+  border-top: 5px solid white;
+  grid-column: 1/5;
+
+  font-family: roboto;
+
+  h3 {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-family: roboto;
+  }
+}
+
+.current {
+  border-top: 5px solid lightgrey;
+}
+
+.show-menu {
+  display: block;
+  animation: slide-menu 0.25s ease-in forwards;
+
+  //   li:nth-of-type(1) {
+  //     animation: menu-item-anim 0.6s forwards 1s ease-in-out;
+  //   }
+
+  .close-btn {
+    animation: show-x 0.5s 0.25s forwards;
+  }
+}
+.hide {
+  display: none;
+}
+// .noScroll {
+//   overflow: hidden;
+// }
+
+@keyframes slide-menu {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes close-menu {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes show-x {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes menu-item-anim {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #name {
+    margin: 50% auto;
+  }
+  nav {
+    ul {
+      display: block;
+
+      // justify-items: center;
+      margin-top: 50px;
+    }
+  }
+  body {
+    background-color: black;
+  }
+}
