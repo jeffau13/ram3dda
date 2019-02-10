@@ -100,7 +100,7 @@ body {
     width: 90%;
   }
   .thumbnails {
-    max-width: 1920px;
+    max-width: 1720px;
   }
   #imgwall {
     grid-template-columns: repeat(3, 1fr);
