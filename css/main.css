@@ -1,5 +1,5 @@
 h1 {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 2.5em;
   color: whitesmoke;
   text-align: center;
@@ -7,7 +7,7 @@ h1 {
 
 h4,
 p {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 /* .wrapper{
     
@@ -94,7 +94,7 @@ body {
 /* for large screens */
 @media screen and (min-width: 3000px) {
   #wrapper {
-    display: block;
+    /* display: block; */
     margin-left: auto;
     margin-right: auto;
     width: 90%;
