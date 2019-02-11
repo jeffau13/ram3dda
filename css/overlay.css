@@ -13,7 +13,7 @@ header a {
   margin-top: 10px;
 }
 
-header a:hover {
+header #name:hover {
   border-top: 5px solid white;
 }
 
@@ -23,9 +23,13 @@ header .menu-btn {
   cursor: pointer;
 }
 
+header .menu-btn:hover {
+  border: 1px solid white;
+}
+
 nav {
   font-family: 'Roboto';
-  background: black;
+  background: #1e1f2c;
   padding: 2em;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);

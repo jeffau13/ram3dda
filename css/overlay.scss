@@ -10,7 +10,7 @@ header {
     font-size: 2em;
     margin-top: 10px;
   }
-  a:hover {
+  #name:hover {
     border-top: 5px solid white;
   }
   .menu-btn {
@@ -18,11 +18,14 @@ header {
     float: left;
     cursor: pointer;
   }
+  .menu-btn:hover {
+    border: 1px solid white;
+  }
 }
 nav {
   font-family: 'Roboto';
   // position: absolute;
-  background: black;
+  background: #1e1f2c;
   padding: 2em;
   transform: scaleX(0);
   width: calc(100% - 4em);
