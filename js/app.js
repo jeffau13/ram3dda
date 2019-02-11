@@ -9,7 +9,7 @@ $(document).ready(function() {
   } catch (ex) {}
 
   $('#imgwall').lightGallery({
-    thumbnail: true,
+    thumbnail: false,
     showThumbByDefault: false,
     fullScreen: true,
     hideBarsDelay: 1500,
