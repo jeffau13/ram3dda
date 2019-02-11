@@ -2,31 +2,6 @@ a {
   text-decoration: none;
 }
 
-header {
-  padding: 2em;
-}
-
-header a {
-  font-family: 'Roboto';
-  color: white;
-  font-size: 2em;
-  margin-top: 10px;
-}
-
-header #name:hover {
-  border-top: 5px solid white;
-}
-
-header .menu-btn {
-  width: 40px;
-  float: left;
-  cursor: pointer;
-}
-
-header .menu-btn:hover {
-  border: 1px solid white;
-}
-
 nav {
   font-family: 'Roboto';
   background: #1e1f2c;
@@ -85,6 +60,10 @@ nav ul li {
   margin-bottom: 50px;
 }
 
+nav .icons {
+  padding: 10px;
+}
+
 #contacts {
   border-top: 5px solid white;
   -ms-grid-column: 1;
@@ -116,7 +95,11 @@ nav ul li {
 }
 
 .hide {
-  display: none;
+  display: none !important;
+}
+
+.set-background-blueish {
+  background: #1e1f2c;
 }
 
 @-webkit-keyframes slide-menu {

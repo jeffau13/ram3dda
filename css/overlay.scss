@@ -2,26 +2,6 @@ a {
   text-decoration: none;
 }
 
-header {
-  padding: 2em;
-  a {
-    font-family: 'Roboto';
-    color: white;
-    font-size: 2em;
-    margin-top: 10px;
-  }
-  #name:hover {
-    border-top: 5px solid white;
-  }
-  .menu-btn {
-    width: 40px;
-    float: left;
-    cursor: pointer;
-  }
-  .menu-btn:hover {
-    border: 1px solid white;
-  }
-}
 nav {
   font-family: 'Roboto';
   // position: absolute;
@@ -40,6 +20,7 @@ nav {
     cursor: pointer;
     opacity: 0;
   }
+
   ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -70,6 +51,9 @@ nav {
       animation: menu-item-anim 0.5s forwards 0.2s ease-in-out;
       margin-bottom: 50px;
     }
+  }
+  .icons {
+    padding: 10px;
   }
 }
 #contacts {
@@ -103,7 +87,11 @@ nav {
   }
 }
 .hide {
-  display: none;
+  display: none !important;
+}
+
+.set-background-blueish {
+  background: #1e1f2c;
 }
 // .noScroll {
 //   overflow: hidden;

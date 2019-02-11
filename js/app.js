@@ -45,6 +45,7 @@ document.getElementById('open-menu').addEventListener('click', function() {
   // els.classList.add('selected');
   // document.body.style.maxHeight = getVh();
   overlay.classList.add('show-menu');
+  document.body.classList.add('set-background-blueish');
   // console.log(current);
 });
 
@@ -53,6 +54,7 @@ closeMenu.addEventListener('click', function() {
   overlay.classList.add('close-menu');
   topbar.classList.remove('hide');
   wrapper.classList.remove('hide');
+  document.body.classList.remove('set-background-blueish');
 });
 
 //sets navbar highlight
