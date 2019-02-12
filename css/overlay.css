@@ -82,7 +82,12 @@ nav .email {
 }
 
 nav .emailBox {
-  margin: 0px auto !important;
+  text-align: center;
+}
+
+nav .emailBox span {
+  border: none;
+  margin-bottom: 20px;
 }
 
 #contacts {
@@ -106,8 +111,8 @@ nav .emailBox {
 
 .show-menu {
   display: block;
-  -webkit-animation: slide-menu 0.25s ease-in forwards;
-          animation: slide-menu 0.25s ease-in forwards;
+  -webkit-animation: slide-menu 0.35s ease-in forwards;
+          animation: slide-menu 0.35s ease-in forwards;
 }
 
 .show-menu .close-btn {
@@ -233,6 +238,7 @@ nav .emailBox {
   .menu-btn {
     font-size: 30px;
     margin-right: 25px;
+    margin-top: 55px;
   }
 }
 /*# sourceMappingURL=overlay.css.map */

@@ -27,9 +27,14 @@ p {
 
 #topbar #name {
   font-family: 'Roboto';
-  color: white;
+  color: #d8d8d8;
   font-size: 2.5em;
   margin-top: 10px;
+}
+
+#topbar #name:hover {
+  border-top: 5px solid white;
+  color: white;
 }
 
 #topbar .menu-btn {
@@ -130,7 +135,7 @@ body {
 }
 
 .centerTop span {
-  color: lightgrey;
+  color: #f1a430;
 }
 
 .rightTop {

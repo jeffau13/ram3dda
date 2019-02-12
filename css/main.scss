@@ -23,9 +23,13 @@ p {
   text-align: center;
   #name {
     font-family: 'Roboto';
-    color: white;
+    color: rgb(216, 216, 216);
     font-size: 2.5em;
     margin-top: 10px;
+  }
+  #name:hover {
+    border-top: 5px solid white;
+    color: white;
   }
 
   .menu-btn {
@@ -117,7 +121,7 @@ body {
 .centerTop {
   margin: auto auto;
   span {
-    color: lightgrey;
+    color: rgb(241, 164, 48);
   }
 }
 .rightTop {
