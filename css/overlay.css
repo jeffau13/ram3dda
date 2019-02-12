@@ -226,8 +226,8 @@ nav .emailBox {
     margin-left: 0 !important;
   }
   .iconbar {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
     font-size: 10px !important;
   }
 }
