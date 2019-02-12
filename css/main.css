@@ -143,6 +143,10 @@ body {
   margin: auto auto;
 }
 
+.rightTop i {
+  padding: 5px;
+}
+
 .leftTop {
   margin: auto auto;
 }
