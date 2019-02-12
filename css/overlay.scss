@@ -148,6 +148,7 @@ nav {
   }
 }
 
+// mobile
 @media only screen and (max-width: 1200px) {
   #name {
     margin: 50% auto;
@@ -170,5 +171,9 @@ nav {
   .iconbar {
     grid-template-columns: 1fr 1fr 1fr 1fr !important;
     font-size: 10px !important;
+  }
+  .menu-btn {
+    font-size: 30px;
+    margin-right: 25px;
   }
 }

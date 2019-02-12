@@ -230,5 +230,9 @@ nav .emailBox {
         grid-template-columns: 1fr 1fr 1fr 1fr !important;
     font-size: 10px !important;
   }
+  .menu-btn {
+    font-size: 30px;
+    margin-right: 25px;
+  }
 }
 /*# sourceMappingURL=overlay.css.map */
