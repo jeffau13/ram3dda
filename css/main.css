@@ -179,6 +179,12 @@ body {
   .rightTop {
     display: none;
   }
+  #name {
+    font-size: 1.8em;
+  }
+  .pageName {
+    font-size: 1.5em;
+  }
 }
 
 /* desktop or bigger screens */
