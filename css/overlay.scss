@@ -50,7 +50,7 @@ nav {
     }
     li {
       opacity: 0;
-      animation: menu-item-anim 0.5s forwards 0.2s ease-in-out;
+      animation: menu-item-anim 0.8s forwards 0.4s ease-in-out;
       margin-bottom: 50px;
     }
   }
@@ -102,7 +102,7 @@ nav {
   //   }
 
   .close-btn {
-    animation: show-x 0.5s 0.25s forwards;
+    animation: show-x 0.8s 0.25s forwards;
   }
 }
 .hide {

@@ -58,8 +58,8 @@ nav ul span {
 
 nav ul li {
   opacity: 0;
-  -webkit-animation: menu-item-anim 0.5s forwards 0.2s ease-in-out;
-          animation: menu-item-anim 0.5s forwards 0.2s ease-in-out;
+  -webkit-animation: menu-item-anim 0.8s forwards 0.4s ease-in-out;
+          animation: menu-item-anim 0.8s forwards 0.4s ease-in-out;
   margin-bottom: 50px;
 }
 
@@ -115,8 +115,8 @@ nav .emailBox span {
 }
 
 .show-menu .close-btn {
-  -webkit-animation: show-x 0.5s 0.25s forwards;
-          animation: show-x 0.5s 0.25s forwards;
+  -webkit-animation: show-x 0.8s 0.25s forwards;
+          animation: show-x 0.8s 0.25s forwards;
 }
 
 .hide {

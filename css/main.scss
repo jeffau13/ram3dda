@@ -68,17 +68,21 @@ p {
 .main {
   text-align: center;
 
+  // margin-bottom: 30px;
+  margin: auto;
   margin-bottom: 30px;
+  width: 80%;
   .pageName {
     font-family: 'Roboto';
     font-weight: bold;
     font-size: 2em;
   }
   .pageDesc {
-    color: rgb(197, 197, 197);
+    color: rgb(137, 176, 212);
     font-size: 1.1em;
     font-family: 'Roboto';
     margin-bottom: 23px;
+
     // margin: 10px auto;
   }
 }
