@@ -46,7 +46,7 @@ nav {
       display: block;
       font-size: 1em;
       margin-top: 20px;
-      border-top: 1px solid gray;
+      // border-top: 1px solid gray;
     }
     li {
       opacity: 0;
@@ -163,6 +163,9 @@ nav {
 
       // justify-items: center;
       margin-top: 50px;
+      span {
+        border-top: 1px solid gray;
+      }
     }
   }
   body {
