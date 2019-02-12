@@ -16,11 +16,14 @@ nav {
 }
 
 nav .close-btn {
-  position: absolute;
-  width: 40px;
-  float: left;
+  margin-left: 43px;
   cursor: pointer;
   opacity: 0;
+  color: #dae3da;
+}
+
+nav .close-btn:hover {
+  color: white;
 }
 
 nav ul {
@@ -41,7 +44,7 @@ nav ul a {
   font-size: 2em;
 }
 
-nav ul a:hover {
+nav ul .nav-link:hover {
   border-top: 5px solid white;
 }
 
@@ -62,6 +65,24 @@ nav ul li {
 
 nav .icons {
   padding: 10px;
+  font-size: 2em;
+}
+
+nav .iconbar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+
+nav .email {
+  font-size: 1em;
+  text-align: center;
+}
+
+nav .emailBox {
+  margin: 0px auto !important;
 }
 
 #contacts {
@@ -72,10 +93,10 @@ nav .icons {
   font-family: roboto;
 }
 
-#contacts h3 {
+#contacts h2 {
   text-align: center;
   color: white;
-  font-size: 3em;
+  font-size: 2em;
   font-family: roboto;
 }
 
@@ -200,6 +221,9 @@ nav .icons {
   }
   body {
     background-color: #0d0d0f;
+  }
+  .close-btn {
+    margin-left: 0 !important;
   }
 }
 /*# sourceMappingURL=overlay.css.map */
