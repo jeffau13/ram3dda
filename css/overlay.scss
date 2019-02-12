@@ -28,7 +28,7 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     width: 80%;
     list-style-type: none;
-    margin: 150px auto;
+    margin: 40px auto;
     padding: 0;
     grid-gap: 10px;
 
@@ -76,7 +76,7 @@ nav {
   }
 }
 #contacts {
-  border-top: 5px solid white;
+  // border-top: 5px solid white;
   grid-column: 1/5;
 
   font-family: roboto;

@@ -33,7 +33,7 @@ nav ul {
       grid-template-columns: repeat(4, 1fr);
   width: 80%;
   list-style-type: none;
-  margin: 150px auto;
+  margin: 40px auto;
   padding: 0;
   grid-gap: 10px;
 }
@@ -91,7 +91,6 @@ nav .emailBox span {
 }
 
 #contacts {
-  border-top: 5px solid white;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-column: 1/5;
