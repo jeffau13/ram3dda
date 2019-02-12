@@ -10,12 +10,6 @@ p {
   font-family: 'Roboto Mono', monospace;
 }
 
-/* .wrapper{
-      
-      display: grid;
-      grid-template-columns: 100px 9fr 100px;
-      margin: 2% 0% 0% 10px;
-    } */
 .albumTitle {
   color: white;
 }
