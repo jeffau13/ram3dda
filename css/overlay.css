@@ -225,5 +225,8 @@ nav .emailBox {
   .close-btn {
     margin-left: 0 !important;
   }
+  .iconbar {
+    font-size: 10px !important;
+  }
 }
 /*# sourceMappingURL=overlay.css.map */
