@@ -22,7 +22,7 @@ p {
   height: 50px;
   text-align: center;
   #name {
-    font-family: 'Roboto';
+    font-family: 'Roboto Mono';
     color: rgb(216, 216, 216);
     font-size: 2.5em;
     margin-top: 10px;
@@ -73,14 +73,14 @@ p {
   margin-bottom: 30px;
   width: 80%;
   .pageName {
-    font-family: 'Roboto';
+    font-family: 'Roboto Mono';
     font-weight: bold;
     font-size: 2em;
   }
   .pageDesc {
     color: rgb(137, 176, 212);
     font-size: 1.1em;
-    font-family: 'Roboto';
+    font-family: 'Roboto Mono';
     margin-bottom: 23px;
 
     // margin: 10px auto;
@@ -107,7 +107,7 @@ hr {
   margin: 0px 0px;
   padding: 0px 0px;
   vertical-align: bottom;
-  height: 350px;
+  height: 100px;
   object-fit: cover;
 }
 .tempsidebar {
@@ -126,6 +126,7 @@ body {
   margin: auto auto;
   span {
     color: rgb(241, 164, 48);
+    font-family: 'Roboto Mono';
   }
 }
 .rightTop {
@@ -198,7 +199,7 @@ body {
     margin: 0px 0px;
     padding: 0px 0px;
     vertical-align: bottom;
-    height: 550px;
+    height: 650px;
     object-fit: cover;
   }
 }
@@ -206,13 +207,12 @@ body {
 /* for large screens */
 @media screen and (min-width: 3000px) {
   #wrapper {
-    /* display: block; */
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
   }
   .thumbnails {
     max-width: 1720px;
+    height: 1000px;
   }
   #imgwall {
     grid-template-columns: repeat(3, 1fr);

@@ -3,7 +3,7 @@ a {
 }
 
 nav {
-  font-family: 'Roboto';
+  font-family: 'Roboto Mono';
   // position: absolute;
   background: #1e1f2c;
   padding: 2em;
@@ -28,7 +28,7 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     width: 80%;
     list-style-type: none;
-    margin: 17% auto;
+    margin: 15% auto;
     padding: 0;
     grid-gap: 10px;
 
@@ -112,6 +112,15 @@ nav {
 .set-background-blueish {
   background: #1e1f2c;
 }
+
+.lock-scroll {
+  @media only screen and (min-width: 1200px) {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
 // .noScroll {
 //   overflow: hidden;
 // }
@@ -162,10 +171,20 @@ nav {
       display: block;
 
       // justify-items: center;
-      margin-top: 50px;
+      margin-left: 50px;
+      margin-top: 0px;
       span {
         border-top: 1px solid gray;
       }
+    }
+    .nav-link {
+      font-size: 1em;
+    }
+    li {
+      span {
+        font-size: 0.5em;
+      }
+      margin-bottom: 10px;
     }
   }
   body {

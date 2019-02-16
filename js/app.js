@@ -27,6 +27,7 @@ const closeMenu = document.getElementById('close-menu');
 const openMenu = document.getElementById('open-menu');
 const wrapper = document.getElementById('wrapper');
 const topbar = document.getElementById('topbar');
+const root = document.getElementsByTagName('html')[0];
 const current = window.location.href;
 let els = document.querySelectorAll(`a[href='${current}']`);
 // get viewport height
@@ -46,6 +47,9 @@ document.getElementById('open-menu').addEventListener('click', function() {
   // document.body.style.maxHeight = getVh();
   overlay.classList.add('show-menu');
   document.body.classList.add('set-background-blueish');
+  document.body.classList.add('lock-scroll');
+  root.classList.add('lock-scroll');
+
   // console.log(current);
 });
 
@@ -55,6 +59,8 @@ closeMenu.addEventListener('click', function() {
   topbar.classList.remove('hide');
   wrapper.classList.remove('hide');
   document.body.classList.remove('set-background-blueish');
+  document.body.classList.remove('lock-scroll');
+  root.classList.remove('lock-scroll');
 });
 
 //sets navbar highlight
