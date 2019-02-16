@@ -39,6 +39,11 @@ function getVh() {
   return h;
 }
 
+document.body.classList.add('fade-out');
+window.addEventListener('load', e => {
+  document.body.classList.remove('fade-out');
+});
+
 document.getElementById('open-menu').addEventListener('click', function() {
   wrapper.classList.add('hide');
   topbar.classList.add('hide');
@@ -62,5 +67,3 @@ closeMenu.addEventListener('click', function() {
   document.body.classList.remove('lock-scroll');
   root.classList.remove('lock-scroll');
 });
-
-//sets navbar highlight
