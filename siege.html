@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet" />
   <link href="css/main.css" rel="stylesheet" />
   <link href="css/overlay.css" rel="stylesheet" />
+  <link href="./css/textScramble.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -23,36 +24,36 @@
     <ul>
       <li>
         <a class= 'nav-link' id="NavHome" href="#" >RAM3DDA</a>
-        <span>Let's go home</span>
+        <span class='nav-desc'>Let's go home</span>
       </li>
 
       <li>
         <a class= 'nav-link current' id="NavSiege" href="siege.html">/SIEGE</a>
-        <span>3D Renders featuring operators  </br> from Rainbow Six Siege</span>
+        <span class='nav-desc'>3D Renders featuring operators  </br> from Rainbow Six Siege</span>
       </li>
       <li>
         <a class= 'nav-link' id="NavVideo" href="#">/VIDEOS</a>
-        <span>Video work I have that I've produced</span>
+        <span class='nav-desc'>Video work I have that I've produced</span>
       </li>
       <li>
         <a class= 'nav-link' id="NavPrints" href="#">/PRINTS</a>
-        <span>Click here to purchase physical prints!</span>
+        <span class='nav-desc'>Click here to purchase physical prints!</span>
       </li>
       <li>
         <a class= 'nav-link' href="#">/WALLPAPERS</a>
-        <span>Wallpapers for your desktop.</span>
+        <span class='nav-desc'>Wallpapers for your desktop.</span>
      </li>
       <li>
         <a class= 'nav-link' id="NavOther" href="#">/CLIENTS</a>
-        <span>Client works that I've done.</span>
+        <span class='nav-desc'>Client works that I've done.</span>
       </li>
       <li>
         <a class= 'nav-link' href="#">/PLACEHOLDER</a>
-        <span>This is a placeholder</span>
+        <span class='nav-desc'>This is a placeholder</span>
       </li>
       <li>
         <a class= 'nav-link' id="NavAbout" href="#">/ABOUT</a>
-        <span>About Ross Morris</span>
+        <span class='nav-desc'>About Ross Morris</span>
       </li>
       <li id="contacts">
         
@@ -82,12 +83,12 @@
   </nav>
   <header id="topbar">
     <div class="leftTop">
-
+  
       <a id="open-menu"> <i class="fa fa-bars fa-3x menu-btn icons" aria-hidden="true" id="menu-icon"></i></a>
-      <a  href="#"><img class="logoIMG" src="assets/logo.png"> </a> </div> <div class="centerTop">
-        <a href="#" class="logo" id="name">Ross A. Morris</a><br />
-        <span> 3D DESIGN & ANIMATION ARTIST</span>
-      </a>
+      <a href="#"><img class="logoIMG" src="assets/horizontal.png"> </a> 
+    </div>
+    <div class="centerTop">
+     <div class="text"></div>
     </div>
     <div class="rightTop">
 
@@ -101,7 +102,7 @@
 
   </header>
   <div id="wrapper">
-    <div class="main">
+    <!-- <div class="main">
       <h1 class="pageName">Siege Series</h1>
       <span class="pageDesc">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste alias
@@ -111,7 +112,7 @@
         consequuntur iusto.
       </span>
       <!-- <hr /> -->
-    </div>
+    <!-- </div> --> 
 
     <!-- THATCHER -->
     <div id="imgwall">
@@ -220,7 +221,7 @@
     plugins -->
   <!-- <script src="js/lg-thumbnail.min.js"></script> -->
   <!-- <script src="js/lg-fullscreen.min.js"></script> -->
-
+  <script src =./js/textScramble.js></script>
   <script src="js/app.js"></script>
 </body>
 

@@ -14,7 +14,7 @@ p {
   color: white;
 }
 #topbar {
-  padding-bottom: 4em;
+  padding-bottom: 20px;
   background: #0d0d0f;
   display: grid;
   grid-template-columns: 250px 1fr 250px;
@@ -25,7 +25,7 @@ p {
     font-family: 'Roboto Mono';
     color: rgb(216, 216, 216);
     font-size: 2.5em;
-    margin-top: 10px;
+    // margin-top: 10px;
   }
   #name:hover {
     border-top: 5px solid white;
@@ -33,9 +33,10 @@ p {
   }
 
   .menu-btn {
-    // width: 40px;
-    // float: left;
-    cursor: pointer;
+    margin-top: 0px;
+  
+    height: 100px;
+    width: 60px;
   }
   .menu-btn:hover {
     // border: 1px solid white;
@@ -52,40 +53,36 @@ p {
 .icons {
   color: #dae3da;
 }
-.menu-btn {
-  margin-top: 35px;
 
-  height: 96px;
-  width: 96px;
-}
 .logoIMG {
-  margin-top: 30px;
-  margin-left: 10px;
-  height: 64px;
+  // position:absolute;
+  margin-top: -15px;
+
+  height: 100px;
   // float: left;
 }
 
-.main {
-  text-align: center;
+// .main {
+//   text-align: center;
 
-  // margin-bottom: 30px;
-  margin: auto;
-  margin-bottom: 30px;
-  width: 80%;
-  .pageName {
-    font-family: 'Roboto Mono';
-    font-weight: bold;
-    font-size: 2em;
-  }
-  .pageDesc {
-    color: rgb(137, 176, 212);
-    font-size: 1.1em;
-    font-family: 'Roboto Mono';
-    margin-bottom: 23px;
+//   // margin-bottom: 30px;
+//   margin: auto;
+//   margin-bottom: 30px;
+//   width: 80%;
+//   .pageName {
+//     font-family: 'Roboto Mono';
+//     font-weight: bold;
+//     font-size: 2em;
+//   }
+//   .pageDesc {
+//     color: rgb(137, 176, 212);
+//     font-size: 1.1em;
+//     font-family: 'Roboto Mono';
+//     margin-bottom: 23px;
 
-    // margin: 10px auto;
-  }
-}
+//     // margin: 10px auto;
+//   }
+// }
 
 hr {
   color: white;
@@ -129,20 +126,20 @@ body.fade-out {
 }
 
 .centerTop {
-  margin: auto auto;
+  margin-top:10px;
+  font-family: 'Roboto Mono', monospace;
   span {
-    color: rgb(241, 164, 48);
-    font-family: 'Roboto Mono';
-  }
+    font-family: 'Roboto Mono', monospace;
+}
 }
 .rightTop {
-  margin: auto auto;
+  margin-top:5px;
   i {
     padding: 5px;
   }
 }
 .leftTop {
-  margin: auto auto;
+  // margin: auto auto;
 }
 /* responsive: */
 
@@ -168,7 +165,7 @@ body.fade-out {
   }
   #topbar {
     grid-template-columns: 100px 1fr;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
   }
 
   .logoIMG {

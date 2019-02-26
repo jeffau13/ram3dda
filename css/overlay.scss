@@ -5,7 +5,8 @@ a {
 nav {
   font-family: 'Roboto Mono';
   // position: absolute;
-  background: #1e1f2c;
+  background-color: #222222;
+  background:repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px; 
   padding: 2em;
   transform: scaleX(0);
   width: calc(100% - 4em);
@@ -110,7 +111,8 @@ nav {
 }
 
 .set-background-blueish {
-  background: #1e1f2c;
+  background: #222222;
+  background:repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px; 
 }
 
 .lock-scroll {
@@ -171,18 +173,20 @@ nav {
       display: block;
 
       // justify-items: center;
-      margin-left: 50px;
+
       margin-top: 0px;
       span {
         border-top: 1px solid gray;
       }
     }
     .nav-link {
-      font-size: 1em;
+      font-size: 1.3em;
+      margin-left: 50px;
     }
     li {
-      span {
-        font-size: 0.5em;
+      .nav-desc {
+        font-size: 0.8em;
+        margin-left: 50px;
       }
       margin-bottom: 10px;
     }
