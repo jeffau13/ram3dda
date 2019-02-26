@@ -42,8 +42,8 @@ p {
   }
 
   .menu-btn {
-    margin-top: 0px;
-  
+    margin-top: 12px;
+    font-size:2.5em;
     height: 100px;
     width: 60px;
   }
@@ -65,7 +65,7 @@ p {
 
 .logoIMG {
   // position:absolute;
-  margin-top: -15px;
+  margin-top: -10px;
 
   height: 100px;
   // float: left;
@@ -142,14 +142,12 @@ body.fade-out {
 }
 }
 .rightTop {
-  margin-top:5px;
+  margin-top:12px;
   i {
     padding: 5px;
   }
 }
-.leftTop {
-  // margin: auto auto;
-}
+
 /* responsive: */
 
 /* Smartphones (portrait) ----------- */
@@ -173,10 +171,10 @@ body.fade-out {
     object-fit: cover;
   }
   #topbar {
-    grid-template-columns: 100px 1fr;
-    padding-bottom: 20px;
+    grid-template-columns: 50px 1fr;
+    padding-bottom:10px;
     .text {
-      font-size: 1em;
+      font-size: 1.2em;
       font-weight:100;
     }
   }

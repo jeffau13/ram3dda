@@ -7,7 +7,6 @@ nav {
   // position: absolute;
   background-color: #222222;
   background:repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px; 
-  padding: 2em;
   transform: scaleX(0);
   width: calc(100% - 4em);
   height: calc(100vh - 4em);
@@ -15,10 +14,12 @@ nav {
   transform-origin: left;
 
   .close-btn {
-    margin-left: 43px;
+
+    margin-left: 12px;
     cursor: pointer;
     opacity: 0;
     color: #dae3da;
+    font-size:3em;
   }
   .close-btn:hover {
     color: white;
@@ -29,7 +30,7 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     width: 80%;
     list-style-type: none;
-    margin: 15% auto;
+    margin: 13% auto 0px auto;
     padding: 0;
     grid-gap: 10px;
 
@@ -119,7 +120,7 @@ nav {
 
 .lock-scroll {
   @media only screen and (min-width: 1200px) {
-    margin: 0;
+    // margin: 0;
     height: 100%;
     overflow: hidden;
   }
@@ -206,15 +207,13 @@ nav {
   }
   .close-btn {
     // position: absolute;
-    margin-left: 0 !important;
+    // margin-left: 10px;
+    // font-size:30px;
+    margin-top:0px !important;
   }
   .iconbar {
     grid-template-columns: 1fr 1fr 1fr 1fr !important;
     font-size: 10px !important;
   }
-  .menu-btn {
-    font-size: 30px;
-    margin-right: 25px;
-    margin-top: 55px;
-  }
+  
 }

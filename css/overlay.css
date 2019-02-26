@@ -6,7 +6,6 @@ nav {
   font-family: 'Roboto Mono';
   background-color: #222222;
   background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0/15px 15px;
-  padding: 2em;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   width: calc(100% - 4em);
@@ -17,10 +16,11 @@ nav {
 }
 
 nav .close-btn {
-  margin-left: 43px;
+  margin-left: 12px;
   cursor: pointer;
   opacity: 0;
   color: #dae3da;
+  font-size: 3em;
 }
 
 nav .close-btn:hover {
@@ -34,7 +34,7 @@ nav ul {
       grid-template-columns: repeat(4, 1fr);
   width: 80%;
   list-style-type: none;
-  margin: 15% auto;
+  margin: 13% auto 0px auto;
   padding: 0;
   grid-gap: 10px;
 }
@@ -132,7 +132,6 @@ nav .emailBox span {
 
 @media only screen and (min-width: 1200px) {
   .lock-scroll {
-    margin: 0;
     height: 100%;
     overflow: hidden;
   }
@@ -257,17 +256,12 @@ nav .emailBox span {
     background-color: #0d0d0f;
   }
   .close-btn {
-    margin-left: 0 !important;
+    margin-top: 0px !important;
   }
   .iconbar {
     -ms-grid-columns: 1fr 1fr 1fr 1fr !important;
         grid-template-columns: 1fr 1fr 1fr 1fr !important;
     font-size: 10px !important;
-  }
-  .menu-btn {
-    font-size: 30px;
-    margin-right: 25px;
-    margin-top: 55px;
   }
 }
 /*# sourceMappingURL=overlay.css.map */
