@@ -63,8 +63,9 @@ class TextScramble {
   const phrases = [
     'Ross A. Morris',
     '3D Design & Animation',
-     ' Siege Series '
+     
   ]
+  phrases.push(document.title);
   
   const el = document.querySelector('.text')
   const fx = new TextScramble(el)
