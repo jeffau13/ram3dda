@@ -21,8 +21,13 @@ p {
   display: grid;
   -ms-grid-columns: 250px 1fr 250px;
       grid-template-columns: 250px 1fr 250px;
+  width: 100%;
   height: 50px;
   text-align: center;
+  top: 0;
+  position: fixed;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
 }
 
 #topbar #name {
@@ -160,6 +165,10 @@ body.fade-out {
         grid-template-columns: 100px 1fr;
     padding-bottom: 20px;
   }
+  #topbar .text {
+    font-size: 1em;
+    font-weight: 100;
+  }
   .logoIMG {
     display: none;
   }
@@ -168,10 +177,6 @@ body.fade-out {
   }
   .rightTop {
     display: none;
-  }
-  #topbar .text {
-    font-size: 1em;
-    font-weight: 100;
   }
 }
 

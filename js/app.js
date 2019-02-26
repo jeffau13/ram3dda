@@ -67,3 +67,15 @@ closeMenu.addEventListener('click', function() {
   document.body.classList.remove('lock-scroll');
   root.classList.remove('lock-scroll');
 });
+
+// -- nav scroll:
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("topbar").style.top = "0";
+  } else {
+    document.getElementById("topbar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
