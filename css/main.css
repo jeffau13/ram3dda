@@ -163,15 +163,15 @@ body.fade-out {
   .logoIMG {
     display: none;
   }
+  .smallIMG {
+    display: block;
+  }
   .rightTop {
     display: none;
   }
-  #topbar #name {
-    font-size: 2em;
-  }
-  .pageName {
-    font-size: 1.6em;
-    margin-top: 0px;
+  #topbar .text {
+    font-size: 1em;
+    font-weight: 100;
   }
 }
 

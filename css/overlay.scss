@@ -35,7 +35,7 @@ nav {
 
     a {
       color: white;
-      font-weight: bold;
+      font-weight: 100;
       font-size: 2em;
     }
     .nav-link:hover {
@@ -71,6 +71,8 @@ nav {
   .emailBox {
     text-align: center;
     span {
+      font-family:'Roboto Mono';
+      font-weight: 100;
       border: none;
       margin-bottom: 20px;
     }
@@ -182,6 +184,7 @@ nav {
     .nav-link {
       font-size: 1.3em;
       margin-left: 50px;
+      
     }
     li {
       .nav-desc {
@@ -190,7 +193,14 @@ nav {
       }
       margin-bottom: 10px;
     }
+    #email{
+      font-family:'Roboto Mono';
+      font-weight:100;
+      margin-left:0px !important;
+
+  
   }
+}
   body {
     background-color: #0d0d0f;
   }
