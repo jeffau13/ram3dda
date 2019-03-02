@@ -70,6 +70,10 @@ p {
   height: 100px;
 }
 
+.smallLogo {
+  display: none;
+}
+
 hr {
   color: white;
   margin-top: 30px;
@@ -169,49 +173,6 @@ body.fade-out {
   color: #b3b3b3;
 }
 
-/* responsive: */
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 1200px) {
-  #imgwall {
-    display: -ms-grid;
-    display: grid;
-    /* grid-template-columns: repeat(auto-fill,minmax(50%,1fr)); */
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    grid-gap: 0px;
-    /* margin: 0% 5%; */
-    /* grid-template-rows: auto, 2fr; */
-  }
-  .thumbnails {
-    width: 100%;
-    margin: 0px 0px;
-    padding: 0px 0px;
-    vertical-align: bottom;
-    height: 300px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  #topbar {
-    -ms-grid-columns: 50px 1fr;
-        grid-template-columns: 50px 1fr;
-    padding-bottom: 10px;
-  }
-  #topbar .text {
-    font-size: 1.2em;
-    font-weight: 100;
-  }
-  .logoIMG {
-    display: none;
-  }
-  .smallIMG {
-    display: block;
-  }
-  .rightTop {
-    display: none;
-  }
-}
-
 .button {
   outline: 0;
   color: #9fa8b0;
@@ -246,6 +207,58 @@ body.fade-out {
   /* webkit */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4C5A64', endColorstr='#2E3940',GradientType=0 );
   /* ie */
+}
+
+/* responsive: */
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 1200px) {
+  #imgwall {
+    display: -ms-grid;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill,minmax(50%,1fr)); */
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-gap: 0px;
+    /* margin: 0% 5%; */
+    /* grid-template-rows: auto, 2fr; */
+  }
+  .thumbnails {
+    width: 100%;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    vertical-align: bottom;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #topbar {
+    -ms-grid-columns: 125px 1fr;
+        grid-template-columns: 125px 1fr;
+    padding-bottom: 10px;
+  }
+  #topbar .text {
+    font-size: 1.0em;
+    font-weight: 100;
+    margin-top: 8px;
+  }
+  .logoIMG {
+    display: none;
+  }
+  .smallIMG {
+    display: block;
+  }
+  .rightTop {
+    display: none;
+  }
+  #smallLogo {
+    top: 0;
+    display: block;
+    height: 42px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 10px;
+  }
 }
 
 /* desktop or bigger screens */
