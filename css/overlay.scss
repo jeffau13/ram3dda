@@ -44,7 +44,7 @@ nav {
     }
 
     span {
-      color: rgb(194, 194, 194);
+      color: rgb(150, 150, 150);
       display: block;
       font-size: 1em;
       margin-top: 20px;
@@ -71,13 +71,14 @@ nav {
   }
   .emailBox {
     text-align: center;
-    width:280px;
+    
     margin:20px auto;
     span {
       font-family:'Roboto Mono';
       font-weight: 100;
       border: none;
       margin-bottom: 20px;
+      color:#c2c2c2;
     }
   }
 }
@@ -197,7 +198,9 @@ nav {
       }
       margin-bottom: 10px;
     }
-    
+    .emailbox{
+      width:280px;
+    }
     #email{
       font-family:'Roboto Mono';
       font-weight:100;
