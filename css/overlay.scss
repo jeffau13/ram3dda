@@ -67,10 +67,12 @@ nav {
   }
   .email {
     font-size: 1em;
-    text-align: center;
+    // text-align: center;
   }
   .emailBox {
     text-align: center;
+    width:400px;
+    margin:20px auto;
     span {
       font-family:'Roboto Mono';
       font-weight: 100;

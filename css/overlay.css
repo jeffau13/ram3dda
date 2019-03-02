@@ -78,11 +78,12 @@ nav .iconbar {
 
 nav .email {
   font-size: 1em;
-  text-align: center;
 }
 
 nav .emailBox {
   text-align: center;
+  width: 400px;
+  margin: 20px auto;
 }
 
 nav .emailBox span {
