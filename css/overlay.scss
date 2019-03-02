@@ -30,7 +30,7 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     width: 80%;
     list-style-type: none;
-    margin: 13% auto 0px auto;
+    margin: 9% auto 0px auto;
     padding: 0;
     grid-gap: 10px;
 
@@ -225,3 +225,13 @@ nav {
   }
   
 }
+
+// @media screen and (min-width: 3000px) {
+
+//   nav{
+//     ul{
+//       top:1000px !important;
+//     }
+//   }
+
+// }

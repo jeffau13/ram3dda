@@ -97,7 +97,6 @@ p {
 // }
 #demoreel{
   z-index: 0;
-  top:-5px;
   width:88%;
   // max-height:100px !important;
   margin:0 auto;
@@ -144,6 +143,7 @@ body {
   font-family: 'Roboto';
   opacity: 1;
   transition: 1.2s opacity;
+  margin:0px;
 }
 body.fade-out {
   opacity: 0;
@@ -263,9 +263,7 @@ body.fade-out {
     /* margin: 0% 5%; */
     /* grid-template-rows: auto, 2fr; */
   }
-  #demoreel{
-    width:100%;
-  }
+ 
 
   .thumbnails {
     width: 100%;
@@ -305,6 +303,10 @@ body.fade-out {
 
     
   }
+  #demoreel{
+    top:60px;
+    width:100%;
+  }
 
 }
   
@@ -328,6 +330,9 @@ body.fade-out {
     height: 650px;
     object-fit: cover;
   }
+  #demoreel{
+    top:-20px;
+  }
 }
 
 /* for large screens */
@@ -343,5 +348,8 @@ body.fade-out {
   }
   #imgwall {
     grid-template-columns: repeat(3, 1fr);
+  }
+  #demoreel{
+    top:-50px;
   }
 }

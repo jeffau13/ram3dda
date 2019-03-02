@@ -33,7 +33,7 @@ nav ul {
       grid-template-columns: repeat(4, 1fr);
   width: 80%;
   list-style-type: none;
-  margin: 13% auto 0px auto;
+  margin: 9% auto 0px auto;
   padding: 0;
   grid-gap: 10px;
 }
