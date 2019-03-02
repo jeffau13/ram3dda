@@ -15,8 +15,9 @@ p {
 }
 
 #topbar {
+  top: 0;
+  z-index: 2;
   padding-bottom: 20px;
-  background: #0d0d0f;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 250px 1fr 250px;
@@ -74,6 +75,25 @@ p {
   display: none;
 }
 
+#demoreel {
+  z-index: 0;
+  top: -5px;
+  width: 88%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+#demoreel iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 hr {
   color: white;
   margin-top: 30px;
@@ -108,7 +128,8 @@ hr {
 }
 
 body {
-  background-color: #0d0d0f;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#5e5e5e), color-stop(#555456), color-stop(#4b4b4d), color-stop(#424245), color-stop(#39393d), color-stop(#323237), color-stop(#2c2c30), color-stop(#25252a), color-stop(#1f1f23), color-stop(#19191d), color-stop(#141417), to(#0c0c0f));
+  background-image: linear-gradient(to left top, #5e5e5e, #555456, #4b4b4d, #424245, #39393d, #323237, #2c2c30, #25252a, #1f1f23, #19191d, #141417, #0c0c0f);
   font-family: 'Roboto';
   opacity: 1;
   -webkit-transition: 1.2s opacity;
@@ -222,6 +243,9 @@ body.fade-out {
     grid-gap: 0px;
     /* margin: 0% 5%; */
     /* grid-template-rows: auto, 2fr; */
+  }
+  #demoreel {
+    width: 100%;
   }
   .thumbnails {
     width: 100%;
