@@ -236,6 +236,7 @@ nav .emailBox span {
   }
   nav ul span {
     border-top: 1px solid gray;
+    font-size: 0.8em;
   }
   nav .nav-link {
     font-size: 1.3em;
@@ -252,6 +253,7 @@ nav .emailBox span {
     font-family: 'Roboto Mono';
     font-weight: 100;
     margin-left: 0px !important;
+    font-size: 1em;
   }
   body {
     background-color: #0d0d0f;
