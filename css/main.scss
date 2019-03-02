@@ -147,6 +147,38 @@ body.fade-out {
     padding: 5px;
   }
 }
+.end{
+  font-weight:100;
+  a{
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 5px;
+    color: #FAFAFA;
+    text-decoration: underline;
+
+  }
+  p{
+
+    margin-left: 5px;
+    
+    color:#FAFAFA;
+
+  }
+}
+
+.footer{
+  width: 300px;
+  margin: auto auto;
+  p{
+    font-weight:100;
+    font-size: 0.8em;
+
+    text-align: center;
+    color:#b3b3b3 ;
+
+    
+  }
+
+}
 
 /* responsive: */
 
