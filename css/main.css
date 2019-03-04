@@ -310,7 +310,7 @@ body.fade-out {
        object-fit: cover;
   }
   #demoreel {
-    top: -20px;
+    top: 0px;
   }
 }
 
@@ -329,7 +329,7 @@ body.fade-out {
         grid-template-columns: repeat(3, 1fr);
   }
   #demoreel {
-    top: -50px;
+    top: -40px;
   }
 }
 /*# sourceMappingURL=main.css.map */

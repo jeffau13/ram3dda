@@ -119,6 +119,7 @@ hr {
 }
 
 #imgwall {
+  
   display: grid;
   /* grid-template-columns: repeat(auto-fill,minmax(50%,1fr)); */
   grid-template-columns: repeat(1, 1fr);
@@ -331,7 +332,7 @@ body.fade-out {
     object-fit: cover;
   }
   #demoreel{
-    top:-20px;
+    top: 0px;
   }
 }
 
@@ -350,6 +351,6 @@ body.fade-out {
     grid-template-columns: repeat(3, 1fr);
   }
   #demoreel{
-    top:-50px;
+    top:-40px;
   }
 }
