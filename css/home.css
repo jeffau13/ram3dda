@@ -1,4 +1,11 @@
 #imgwall {
   margin-top: -3%;
 }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 1200px) {
+  #imgwall {
+    margin-top: 8%;
+  }
+}
 /*# sourceMappingURL=home.css.map */
