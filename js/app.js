@@ -69,16 +69,16 @@ closeMenu.addEventListener('click', function() {
 });
 
 // -- nav hides/unhide on scroll:
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("topbar").style.top = "0";
-  } else {
-    document.getElementById("topbar").style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementById("topbar").style.top = "0";
+//   } else {
+//     document.getElementById("topbar").style.top = "-100px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
 
 // Smooth Scrolling
 $('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(function() {
