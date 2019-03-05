@@ -129,8 +129,7 @@ hr {
 }
 
 body {
-  background-image: -webkit-gradient(linear, right bottom, left top, from(#5e5e5e), color-stop(#555456), color-stop(#4b4b4d), color-stop(#424245), color-stop(#39393d), color-stop(#323237), color-stop(#2c2c30), color-stop(#25252a), color-stop(#1f1f23), color-stop(#19191d), color-stop(#141417), to(#0c0c0f));
-  background-image: linear-gradient(to left top, #5e5e5e, #555456, #4b4b4d, #424245, #39393d, #323237, #2c2c30, #25252a, #1f1f23, #19191d, #141417, #0c0c0f);
+  background: #19191D;
   font-family: 'Roboto';
   opacity: 1;
   -webkit-transition: 1.2s opacity;
@@ -258,7 +257,6 @@ body.fade-out {
   #topbar {
     -ms-grid-columns: 125px 1fr;
         grid-template-columns: 125px 1fr;
-    padding-bottom: 10px;
   }
   #topbar .text {
     font-size: 1.0em;
@@ -281,9 +279,6 @@ body.fade-out {
     margin-left: 0px !important;
     margin-right: 0px !important;
     margin-top: 10px;
-  }
-  #demoreel {
-    width: 100%;
   }
 }
 
@@ -311,7 +306,8 @@ body.fade-out {
        object-fit: cover;
   }
   #demoreel {
-    top: 0px;
+    width: 90%;
+    margin: calc(-2.825% + 70px) auto -2.825% auto;
   }
 }
 
@@ -328,6 +324,10 @@ body.fade-out {
   #imgwall {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+  #demoreel {
+    width: 70%;
+    margin: calc(-8.475% + 70px) auto -8.475% auto;
   }
 }
 /*# sourceMappingURL=main.css.map */

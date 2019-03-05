@@ -137,7 +137,7 @@ hr {
   margin-right: 10px;
 }
 body {
-  background-image: linear-gradient(to left top, #5e5e5e, #555456, #4b4b4d, #424245, #39393d, #323237, #2c2c30, #25252a, #1f1f23, #19191d, #141417, #0c0c0f);
+  background:#19191D;
   font-family: 'Roboto';
   opacity: 1;
   transition: 1.2s opacity;
@@ -273,7 +273,6 @@ body.fade-out {
   }
   #topbar {
     grid-template-columns: 125px 1fr;
-    padding-bottom: 10px;
     .text {
       font-size: 1.0em;
       font-weight: 100;
@@ -301,10 +300,7 @@ body.fade-out {
 
     
   }
-  #demoreel{
-    // top:60px;
-    width:100%;
-  }
+  
 
 }
   
@@ -329,7 +325,8 @@ body.fade-out {
     object-fit: cover;
   }
   #demoreel{
-    top: 0px;
+    width:90%;
+    margin: calc(-2.825% + 70px) auto -2.825% auto;
   }
 }
 
@@ -346,6 +343,11 @@ body.fade-out {
   }
   #imgwall {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  #demoreel{
+    width:70%;
+    margin: calc(-8.475% + 70px) auto -8.475% auto;
   }
   
 }
