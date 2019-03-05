@@ -4,8 +4,8 @@ a {
 
 nav {
   font-family: 'Roboto Mono';
-  background-color: #222222;
-  background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0/15px 15px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#121212), color-stop(#1b1b1b), color-stop(#252525), color-stop(#2e2e2e), color-stop(#383838), color-stop(#3f3f3f), color-stop(#454545), color-stop(#4c4c4c), color-stop(#515151), color-stop(#565656), color-stop(#5b5b5b), to(#606060));
+  background-image: linear-gradient(to bottom, #121212, #1b1b1b, #252525, #2e2e2e, #383838, #3f3f3f, #454545, #4c4c4c, #515151, #565656, #5b5b5b, #606060);
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   height: calc(100vh - 4em);
@@ -126,8 +126,7 @@ nav .emailBox span {
 }
 
 .set-background-blueish {
-  background: #222222;
-  background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0/15px 15px;
+  background: #606060;
 }
 
 @media only screen and (min-width: 1200px) {

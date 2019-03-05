@@ -4,9 +4,10 @@ a {
 
 nav {
   font-family: 'Roboto Mono';
-  // position: absolute;
-  background-color: #222222;
-  background:repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px; 
+
+
+  // background:repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px; 
+  background-image: linear-gradient(to bottom, #121212, #1b1b1b, #252525, #2e2e2e, #383838, #3f3f3f, #454545, #4c4c4c, #515151, #565656, #5b5b5b, #606060);
   transform: scaleX(0);
   // width: calc(100% - 4em);
   height: calc(100vh - 4em);
@@ -117,8 +118,8 @@ nav {
 }
 
 .set-background-blueish {
-  background: #222222;
-  background:repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px; 
+  background: #606060;
+
 }
 
 .lock-scroll {
