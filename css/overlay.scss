@@ -15,7 +15,7 @@ nav {
   transform-origin: left;
 
   .close-btn {
-
+    margin-top: 8px;
     margin-left: 12px;
     cursor: pointer;
     opacity: 0;
@@ -215,10 +215,9 @@ nav {
     background-color: #0d0d0f;
   }
   .close-btn {
-    // position: absolute;
-    // margin-left: 10px;
-    // font-size:30px;
-    margin-top:0px !important;
+    
+    margin-top: 8px;
+
   }
   .iconbar {
     grid-template-columns: 1fr 1fr 1fr 1fr !important;
