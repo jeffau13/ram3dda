@@ -25,11 +25,10 @@ p {
   padding-bottom: 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 250px 1fr 250px;
-      grid-template-columns: 250px 1fr 250px;
+  -ms-grid-columns: 650px 1fr  650px;
+      grid-template-columns: 650px 1fr  650px;
   width: 100%;
   height: 50px;
-  text-align: center;
   top: 0;
   position: fixed;
   -webkit-transition: top 0.3s;
@@ -48,6 +47,7 @@ p {
 }
 
 #topbar .menu-btn {
+  display: none;
   margin-top: 12px;
   font-size: 2.5em;
   height: 100px;
@@ -55,6 +55,40 @@ p {
 }
 
 #topbar .menu-btn:hover {
+  color: white;
+}
+
+#topbar .rightTop {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 200px;
+      grid-template-columns: 1fr 200px;
+  margin-top: 20px;
+}
+
+#topbar .text {
+  text-align: center;
+}
+
+#topbar .social {
+  text-align: right;
+  margin-right: 20px;
+}
+
+#topbar .topNav {
+  text-align: right;
+  text-decoration: none;
+  font-family: 'Roboto Mono';
+  font-weight: 100;
+  color: inherit;
+  font-size: 1em;
+  color: grey;
+  margin-top: 2px;
+}
+
+#topbar .topNav a, #topbar .topNav a:link, #topbar .topNav a:visited, #topbar .topNav a:focus, #topbar .topNav a:hover, #topbar .topNav a:active {
+  text-decoration: none;
+  cursor: crosshair;
   color: white;
 }
 
@@ -232,8 +266,12 @@ body.fade-out {
 }
 
 /* responsive: */
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 1200px) {
+/* Mobile View (portrait) ----------- */
+@media only screen and (max-width: 1600px) {
+  .menu-btn {
+    display: block !important;
+    margin-left: 10px;
+  }
   #imgwall {
     display: -ms-grid;
     display: grid;
@@ -255,13 +293,13 @@ body.fade-out {
        object-fit: cover;
   }
   #topbar {
-    -ms-grid-columns: 125px 1fr;
-        grid-template-columns: 125px 1fr;
+    -ms-grid-columns: 150px 1fr;
+        grid-template-columns: 150px 1fr;
   }
   #topbar .text {
     font-size: 1.0em;
     font-weight: 100;
-    margin-top: 8px;
+    margin-top: 12px;
   }
   .logoIMG {
     display: none;
@@ -270,6 +308,12 @@ body.fade-out {
     display: block;
   }
   .rightTop {
+    display: none;
+  }
+  .topNav {
+    display: none;
+  }
+  .social {
     display: none;
   }
   #smallLogo {
@@ -283,7 +327,7 @@ body.fade-out {
 }
 
 /* desktop or bigger screens */
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   #imgwall {
     display: -ms-grid;
     display: grid;

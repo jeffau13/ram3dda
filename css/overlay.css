@@ -52,7 +52,6 @@ nav ul .nav-link:hover {
 nav ul span {
   color: #969696;
   display: block;
-  font-size: 1em;
   margin-top: 20px;
 }
 
@@ -65,7 +64,7 @@ nav ul li {
 
 nav .icons {
   padding: 10px;
-  font-size: 2em;
+  font-size: 5em;
 }
 
 nav .iconbar {
