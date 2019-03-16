@@ -67,14 +67,19 @@ class TextScramble {
   ]
   phrases.push(document.title);
   
-  const el = document.querySelector('.text')
-  const fx = new TextScramble(el)
+  const el = document.querySelector('.text');
+  const fx = new TextScramble(el);
   
-  let counter = 0
+  let counter = 0;
+  let scrollCount = 0;
   const next = () => {
+    scrollCount ++;
     fx.setText(phrases[counter]).then(() => {
-      setTimeout(next, 1700)
+      setTimeout(next, 1500)
     })
+    if (scrollCount >6){
+      fx.setText(phrases[0]);
+    }
     counter = (counter + 1) % phrases.length
   }
   
