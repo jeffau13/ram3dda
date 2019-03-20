@@ -27,7 +27,8 @@ $(document).ready(function() {
     subHtmlSelectorRelative: true,
     counter: false,
     animateThumb: false,
-    videoMaxWidth: '80%'
+    videoMaxWidth: '80%',
+    vimeoPlayerParams: { autoplay: true}
   });
 });
 
