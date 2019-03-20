@@ -1,6 +1,8 @@
 #wrapper {
   display: relative;
 }
+
+
 h1 {
   font-family: 'Roboto Mono', monospace;
   font-size: 3em;
@@ -466,6 +468,7 @@ body.fade-out {
       #playContainer {
         margin-left: 43px;
         margin-top: 20px;
+        transform: sccale(0.1);
       }
       
     }
@@ -494,10 +497,7 @@ body.fade-out {
     height: 650px;
     object-fit: cover;
   }
-  #demoreel {
-    width: 90%;
-    margin: calc(-2.825% + 70px) auto -2.825% auto;
-  }
+  
 }
 
 /* for large screens */
@@ -514,8 +514,5 @@ body.fade-out {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  #demoreel {
-    width: 70%;
-    margin: calc(-8.475% + 70px) auto -8.475% auto;
-  }
+  
 }

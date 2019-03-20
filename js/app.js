@@ -1,6 +1,13 @@
 //calls light Gallery and sets options
 $(document).ready(function() {
-  //catch error
+
+  //loading 
+  setTimeout(function(){
+		$('body').addClass('loaded');
+  }, 3500);
+  
+
+  //set lightGallery calls:
   try {
     $('#imgwall').lightGallery();
     $('#imgwall')
@@ -27,7 +34,7 @@ $(document).ready(function() {
     subHtmlSelectorRelative: true,
     counter: false,
     animateThumb: false,
-    videoMaxWidth: '80%',
+    videoMaxWidth: '85%',
     vimeoPlayerParams: { autoplay: true}
   });
 });
