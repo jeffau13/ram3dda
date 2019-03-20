@@ -4,7 +4,7 @@
 
 h1 {
   font-family: 'Roboto Mono', monospace;
-  font-size: 2.4em;
+  font-size: 3em;
   color: whitesmoke;
   text-align: center;
   font-weight: 100;
@@ -26,8 +26,8 @@ p {
   padding-bottom: 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 300px 1fr  650px;
-      grid-template-columns: 300px 1fr  650px;
+  -ms-grid-columns: 300px 1fr 650px;
+      grid-template-columns: 300px 1fr 650px;
   width: 100%;
   height: 50px;
   top: 0;
@@ -88,7 +88,11 @@ p {
   margin-right: 5px;
 }
 
-#topbar .topNav a, #topbar .topNav a:link, #topbar .topNav a:visited, #topbar .topNav a:focus, #topbar .topNav a:active {
+#topbar .topNav a,
+#topbar .topNav a:link,
+#topbar .topNav a:visited,
+#topbar .topNav a:focus,
+#topbar .topNav a:active {
   text-decoration: none;
   color: white;
 }
@@ -101,10 +105,8 @@ p {
   position: fixed;
   width: 1200px;
   height: 200px;
-  top: 50%;
+  top: 30%;
   left: 50%;
-  margin-top: -370px;
-  /* Negative half of height. */
   margin-left: -600px;
   /* Negative half of width. */
 }
@@ -112,7 +114,103 @@ p {
 #centerWrapper #centerInfo {
   font-size: 2em;
   font-weight: bold;
-  text-shadow: 2px 3px 0px #898999;
+  text-shadow: 2px 4px 0px #59595a;
+}
+
+#centerWrapper #centerInfo h1 {
+  margin-bottom: 5px;
+}
+
+#centerWrapper #centerInfo #subtitle {
+  color: whitesmoke;
+  text-align: center;
+  font-family: 'Roboto Mono';
+  font-weight: 100;
+}
+
+#centerWrapper #centerInfo .circle {
+  stroke: #ffffff;
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
+  -webkit-transition: all 0.5s ease-in-out;
+  opacity: 0.3;
+}
+
+#centerWrapper #centerInfo #playContainer {
+  margin-left: 490px;
+  margin-top: 20px;
+}
+
+#centerWrapper #centerInfo #playContainer .playBut {
+  -webkit-transition: all 0.5s ease;
+}
+
+#centerWrapper #centerInfo #playContainer .playBut .triangle {
+  -webkit-transition: all 0.7s ease-in-out;
+  stroke-dasharray: 240;
+  stroke-dashoffset: 480;
+  stroke: #fff;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#centerWrapper #centerInfo #playContainer .playBut:hover .triangle {
+  stroke-dashoffset: 0;
+  opacity: 1;
+  stroke: #ffffff;
+  -webkit-animation: nudge 0.7s ease-in-out;
+          animation: nudge 0.7s ease-in-out;
+}
+
+@-webkit-keyframes nudge {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  70% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes nudge {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  70% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+#centerWrapper #centerInfo #playContainer .playBut:hover .circle {
+  stroke-dashoffset: 0;
+  opacity: 1;
 }
 
 #centerWrapper #mainLogo {
@@ -377,6 +475,27 @@ body.fade-out {
     margin-left: 0px !important;
     margin-right: 0px !important;
     margin-top: 10px;
+  }
+  #centerWrapper {
+    width: 300px;
+    height: 200px;
+    top: 25%;
+    left: 50%;
+    margin-left: -150px;
+  }
+  #centerWrapper #centerInfo {
+    font-size: 0.72em;
+  }
+  #centerWrapper #centerInfo #subtitle {
+    font-size: 1.5em;
+  }
+  #centerWrapper #centerInfo #playContainer {
+    margin-left: 43px;
+    margin-top: 20px;
+  }
+  #centerWrapper #mainLogo {
+    width: 200px;
+    margin-left: 50px;
   }
 }
 

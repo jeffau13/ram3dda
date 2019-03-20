@@ -18,6 +18,16 @@ $(document).ready(function() {
     counter: false,
     animateThumb: false
   });
+  $('#playContainer').lightGallery({
+    thumbnail: false,
+    showThumbByDefault: false,
+    fullScreen: true,
+    hideBarsDelay: 1500,
+    mousewheel: false,
+    subHtmlSelectorRelative: true,
+    counter: false,
+    animateThumb: false
+  });
 });
 
 //navbar
