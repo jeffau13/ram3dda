@@ -102,10 +102,10 @@ p {
 }
 
 #centerWrapper {
-  position: fixed;
+  position: absolute;
   width: 1200px;
   height: 200px;
-  top: 30%;
+  top: 25%;
   left: 50%;
   margin-left: -600px;
   /* Negative half of width. */
@@ -240,21 +240,6 @@ p {
   height: 50px;
   margin-top: 5px;
   margin-left: 30px;
-}
-
-#demoreel {
-  margin-top: 70px;
-  z-index: 0;
-  position: relative;
-  padding-top: 56.25%;
-}
-
-#demoreel iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .vimeo-wrapper {
