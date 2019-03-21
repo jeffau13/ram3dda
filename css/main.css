@@ -477,8 +477,6 @@ body.fade-out {
   #centerWrapper #centerInfo #playContainer {
     margin-left: 43px;
     margin-top: 20px;
-    -webkit-transform: sccale(0.1);
-            transform: sccale(0.1);
   }
   #centerWrapper #mainLogo {
     width: 200px;
@@ -516,6 +514,9 @@ body.fade-out {
   #wrapper {
     margin-left: auto;
     margin-right: auto;
+  }
+  #centerWrapper {
+    top: 30%;
   }
   .thumbnails {
     max-width: 1720px;
