@@ -66,6 +66,7 @@ window.addEventListener('load', e => {
 document.getElementById('open-menu').addEventListener('click', function() {
   wrapper.classList.add('hide');
   topbar.classList.add('hide');
+  centerWrapper.classList.add('hide');
   // document.getElementsByTagName('header').classList.add('hide');
   // els.classList.add('selected');
   // document.body.style.maxHeight = getVh();
@@ -82,6 +83,7 @@ closeMenu.addEventListener('click', function() {
   overlay.classList.add('close-menu');
   topbar.classList.remove('hide');
   wrapper.classList.remove('hide');
+  centerWrapper.classList.remove('hide');
   document.body.classList.remove('set-background-blueish');
   document.body.classList.remove('lock-scroll');
   root.classList.remove('lock-scroll');

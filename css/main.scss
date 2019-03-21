@@ -175,9 +175,13 @@ p {
         }
       }
     }
+    
   }
   #mainLogo {
     margin-left: 266px;
+  }
+  .mobileIcons{
+    display: none;
   }
 }
 .icons:hover {
@@ -461,6 +465,12 @@ body.fade-out {
     #mainLogo {
       width: 200px;
       margin-left: 50px;
+    }
+    .mobileIcons{
+      display: flex;
+      a{
+        margin: auto;
+      }
     }
   }
 }
