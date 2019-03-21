@@ -45,6 +45,7 @@ var overlay = document.getElementById('overlay');
 const closeMenu = document.getElementById('close-menu');
 const openMenu = document.getElementById('open-menu');
 const wrapper = document.getElementById('wrapper');
+const centerWrapper=document.getElementById('centerWrapper');
 const topbar = document.getElementById('topbar');
 const root = document.getElementsByTagName('html')[0];
 const current = window.location.href;
@@ -66,7 +67,9 @@ window.addEventListener('load', e => {
 document.getElementById('open-menu').addEventListener('click', function() {
   wrapper.classList.add('hide');
   topbar.classList.add('hide');
+  if(centerWrapper){
   centerWrapper.classList.add('hide');
+  }
   // document.getElementsByTagName('header').classList.add('hide');
   // els.classList.add('selected');
   // document.body.style.maxHeight = getVh();
@@ -83,7 +86,9 @@ closeMenu.addEventListener('click', function() {
   overlay.classList.add('close-menu');
   topbar.classList.remove('hide');
   wrapper.classList.remove('hide');
+  if(centerWrapper){
   centerWrapper.classList.remove('hide');
+  }
   document.body.classList.remove('set-background-blueish');
   document.body.classList.remove('lock-scroll');
   root.classList.remove('lock-scroll');

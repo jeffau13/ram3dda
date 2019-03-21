@@ -100,7 +100,7 @@ nav {
 }
 
 .show-menu {
-  display: block;
+  display: block !important;
   animation: slide-menu 0.35s ease-in forwards;
 
   //   li:nth-of-type(1) {

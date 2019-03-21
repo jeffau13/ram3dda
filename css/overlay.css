@@ -109,7 +109,7 @@ nav .emailBox span {
 }
 
 .show-menu {
-  display: block;
+  display: block !important;
   -webkit-animation: slide-menu 0.35s ease-in forwards;
           animation: slide-menu 0.35s ease-in forwards;
 }
