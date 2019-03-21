@@ -96,11 +96,11 @@ nav {
 }
 
 .current {
-  border-top: 3px solid lightgrey;
+  border-top: 1px solid lightgrey;
 }
 
 .show-menu {
-  display: block !important;
+  display: block;
   animation: slide-menu 0.35s ease-in forwards;
 
   //   li:nth-of-type(1) {
@@ -209,9 +209,6 @@ nav {
   
   }
 }
-  body {
-    background-color: #0d0d0f;
-  }
   .close-btn {
     
     margin-top: 8px;

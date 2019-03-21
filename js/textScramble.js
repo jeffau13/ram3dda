@@ -77,7 +77,7 @@ class TextScramble {
     fx.setText(phrases[counter]).then(() => {
       setTimeout(next, 700)
     })
-    if (scrollCount >3){
+    if (scrollCount >6){
       fx.setText(phrases[0]);
     }
     counter = (counter + 1) % phrases.length

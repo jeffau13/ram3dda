@@ -105,11 +105,11 @@ nav .emailBox span {
 }
 
 .current {
-  border-top: 3px solid lightgrey;
+  border-top: 1px solid lightgrey;
 }
 
 .show-menu {
-  display: block !important;
+  display: block;
   -webkit-animation: slide-menu 0.35s ease-in forwards;
           animation: slide-menu 0.35s ease-in forwards;
 }
@@ -253,9 +253,6 @@ nav .emailBox span {
     font-weight: 100;
     margin-left: 0px !important;
     font-size: 1em;
-  }
-  body {
-    background-color: #0d0d0f;
   }
   .close-btn {
     margin-top: 8px;

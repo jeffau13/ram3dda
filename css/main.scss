@@ -1,5 +1,5 @@
 #wrapper {
-  display: relative;
+  // display: relative;
 }
 
 body{
@@ -70,7 +70,6 @@ p {
   }
   .text {
     text-align: center;
-    font-weight: normal;
   }
   .social {
     text-align: right;
@@ -297,8 +296,11 @@ body.fade-out {
 .caption {
   display: none;
 }
-
+.leftTop{
+  max-height:70px;
+}
 .centerTop {
+  max-height:70px;
   margin-top: 10px;
   font-family: 'Roboto Mono', monospace;
   span {
@@ -420,8 +422,8 @@ body.fade-out {
     grid-template-columns: 150px 1fr;
     .text {
       font-size: 1.1em;
-      font-weight: bold;
-      margin-top: 5x;
+      // font-weight: bold;
+      margin-top: 9px;
     }
   }
 
