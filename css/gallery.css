@@ -23,7 +23,7 @@
 .projectMenu a:focus,
 .projectMenu a:active {
   position: relative;
-  top: 25%;
+  top: 5%;
   margin: 0px auto;
   z-index: 5;
   text-decoration: none;
@@ -42,7 +42,7 @@
           flex: 1;
   border: 1px solid #c7c7c7;
   margin: 10px;
-  height: 75px;
+  height: 42px;
 }
 
 .projectMenu .projectLink:hover {
@@ -87,11 +87,12 @@
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
-    margin: 100px auto 0px auto;
+    grid-gap: 0px;
+    margin: 0px auto 0px auto;
   }
   .projectMenu .projectLink {
-    border: 2px solid white;
+    border: none;
+    height: 15px;
   }
   .projectMenu a {
     padding: 5px;
