@@ -1,5 +1,5 @@
 #wrapper {
-  margin-top: 75px;
+  margin-top: 70px;
 }
 
 #topbar {
@@ -12,7 +12,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 1000px;
-  margin: 160px auto 0px auto;
+  margin: 100px auto 0px auto;
   padding-bottom: 15px;
 }
 
@@ -57,7 +57,7 @@
 
 .endpoint {
   color: #222222;
-  margin-bottom: 70px;
+  margin-bottom: 35px;
 }
 
 /*  Mobile (Portrait) */
@@ -66,14 +66,15 @@
     width: 300px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   .projectMenu a {
     padding: 5px;
+    font-size: 0.6em;
   }
   .projectMenu {
-    margin: 0px auto 0px auto;
+    margin: 100px auto 0px auto;
   }
   .projectTitle {
     width: 300px;

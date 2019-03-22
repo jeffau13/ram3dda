@@ -1,5 +1,5 @@
 #wrapper {
-  margin-top: 75px;
+  margin-top: 70px;
 }
 
 #topbar {
@@ -10,7 +10,7 @@
 font-size:2em;
   display: flex;
   width: 1000px;
-  margin: 160px auto 0px auto;
+  margin: 100px auto 0px auto;
   padding-bottom: 15px;
   a,
   a:link,
@@ -50,7 +50,7 @@ font-size:2em;
 }
 .endpoint{
     color:#222222;
-    margin-bottom:70px;
+    margin-bottom:35px;
 }
 
 /*  Mobile (Portrait) */
@@ -58,13 +58,14 @@ font-size:2em;
   .projectMenu {
     width: 300px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     a {
       padding: 5px;
+      font-size:0.6em;
     }
   }
   .projectMenu{
-    margin: 0px auto 0px auto;
+    margin: 100px auto 0px auto;
   }
   .projectTitle{
       width:300px; 
@@ -73,6 +74,8 @@ font-size:2em;
       }
       .projectDesc{
           font-size:12px;
+        //   line-height:0.1em;
       }
+
   }
 }
