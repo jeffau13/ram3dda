@@ -7,32 +7,46 @@
 }
 
 .projectMenu {
-font-size:2em;
+  font-size: 1.6em;
   display: flex;
-  width: 1000px;
+  width: 1200px;
   margin: 100px auto 0px auto;
   padding-bottom: 15px;
+  text-align: center;
   a,
   a:link,
   a:visited,
   a:focus,
   a:active {
+    position: relative;
+
+    top: 25%;
+    margin: 0px auto;
     z-index: 5;
-    margin: auto;
     text-decoration: none;
     font-weight: 100;
     font-family: 'Roboto Mono';
-
     color: rgb(223, 223, 223);
-    border-bottom: 1px solid transparent;
   }
   a:hover {
-    border-bottom: 1px solid white;
+    color: white;
+  }
+  .projectLink {
+    flex: 1;
+    border: 1px solid rgb(199, 199, 199);
+    margin: 10px;
+    height: 75px;
+  }
+  .projectLink:hover {
+    border: 1px solid white;
+    a {
+      color: white;
+    }
   }
 }
 .projectTitle {
   font-family: 'Roboto Mono';
-    font-size:2em;
+  font-size: 2em;
   width: 1000px;
   margin: 0px auto;
   padding-bottom: 25px;
@@ -40,17 +54,18 @@ font-size:2em;
   .projectName {
     width: 100%;
     font-size: 2em;
-    margin-top:0px;
+    margin-top: 0px;
     margin-bottom: 0px;
   }
   .projectDesc {
     font-weight: 100;
-    font-size:0.7em;
+    font-size: 0.7em;
   }
 }
-.endpoint{
-    color:#222222;
-    margin-bottom:40px;
+
+.endpoint {
+  color: #222222;
+  margin-bottom: 40px;
 }
 
 /*  Mobile (Portrait) */
@@ -59,23 +74,25 @@ font-size:2em;
     width: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    margin: 100px auto 0px auto;
+    .projectLink {
+      border: 2px solid white;
+    }
     a {
       padding: 5px;
-      font-size:0.6em;
+      font-size: 0.6em;
     }
   }
-  .projectMenu{
-    margin: 100px auto 0px auto;
-  }
-  .projectTitle{
-      width:300px; 
-      .projectName{
-          font-size:36px;
-      }
-      .projectDesc{
-          font-size:12px;
-        //   line-height:0.1em;
-      }
 
+  .projectTitle {
+    width: 300px;
+    .projectName {
+      font-size: 36px;
+    }
+    .projectDesc {
+      font-size: 12px;
+      //   line-height:0.1em;
+    }
   }
 }

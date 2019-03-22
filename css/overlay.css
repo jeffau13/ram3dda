@@ -58,7 +58,7 @@ nav ul li {
   opacity: 0;
   -webkit-animation: menu-item-anim 0.8s forwards 0.4s ease-in-out;
           animation: menu-item-anim 0.8s forwards 0.4s ease-in-out;
-  margin-bottom: 50px;
+  margin-bottom: 42px;
 }
 
 nav .icons {

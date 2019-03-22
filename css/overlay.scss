@@ -5,9 +5,8 @@ a {
 nav {
   font-family: 'Roboto Mono';
 
-
-  // background:repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px; 
-  background-color:#222222;
+  // background:repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+  background-color: #222222;
   transform: scaleX(0);
   // width: calc(100% - 4em);
   height: calc(100vh - 4em);
@@ -20,7 +19,7 @@ nav {
     cursor: pointer;
     opacity: 0;
     color: #dae3da;
-    font-size:3em;
+    font-size: 3em;
   }
   .close-btn:hover {
     color: white;
@@ -53,7 +52,7 @@ nav {
     li {
       opacity: 0;
       animation: menu-item-anim 0.8s forwards 0.4s ease-in-out;
-      margin-bottom: 50px;
+      margin-bottom: 42px;
     }
   }
   .icons {
@@ -70,14 +69,14 @@ nav {
   }
   .emailBox {
     text-align: center;
-    
-    margin:20px auto;
+
+    margin: 20px auto;
     span {
-      font-family:'Roboto Mono';
+      font-family: 'Roboto Mono';
       font-weight: 100;
       border: none;
       margin-bottom: 20px;
-      color:#c2c2c2;
+      color: #c2c2c2;
     }
   }
 }
@@ -117,7 +116,6 @@ nav {
 
 .set-background-blueish {
   background: #222222;
-
 }
 
 .lock-scroll {
@@ -182,13 +180,12 @@ nav {
       margin-top: 0px;
       span {
         border-top: 1px solid gray;
-        font-size:0.8em;
+        font-size: 0.8em;
       }
     }
     .nav-link {
       font-size: 1.3em;
       margin-left: 50px;
-      
     }
     li {
       .nav-desc {
@@ -197,31 +194,26 @@ nav {
       }
       margin-bottom: 10px;
     }
-    .emailbox{
-      width:280px;
+    .emailbox {
+      width: 280px;
     }
-    #email{
-      font-family:'Roboto Mono';
-      font-weight:100;
-      margin-left:0px !important;
-      font-size:1em;
-
-  
+    #email {
+      font-family: 'Roboto Mono';
+      font-weight: 100;
+      margin-left: 0px !important;
+      font-size: 1em;
+    }
   }
-}
   .close-btn {
-    
     margin-top: 8px;
-
   }
   .iconbar {
-    display:flex;
+    display: flex;
     font-size: 10px !important;
-    a{
-      margin:auto;
+    a {
+      margin: auto;
     }
   }
-  
 }
 
 // @media screen and (min-width: 3000px) {
