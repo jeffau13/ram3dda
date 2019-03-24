@@ -1,9 +1,10 @@
-#wrapper {
-  // display: relative;
+html {
+  // prevents scrollBar from shifting content
+  // margin-left: calc(100vw - 100%);
 }
 
-body{
-  background-color:#222222;
+body {
+  background-color: #222222;
 }
 
 h1 {
@@ -20,18 +21,17 @@ p {
 }
 
 .title {
-  margin-top:70px;
+  margin-top: 70px;
 }
 
 #topbar {
-  // background-color:#19191D;
+  // background-color: #19191d;
   position: fixed;
   top: 0;
   z-index: 2;
   padding-bottom: 20px;
   display: grid;
   grid-template-columns: 300px 1fr 650px;
-  // background-color:#222223;
   //   grid-template-rows: auto 1fr auto;
   width: 100%;
   height: 50px;
@@ -113,8 +113,8 @@ p {
     font-weight: bold;
     // margin-top:20%;
     text-shadow: 2px 4px 0px #59595a;
-    h1{
-      margin-bottom:5px;
+    h1 {
+      margin-bottom: 5px;
     }
     #subtitle {
       color: whitesmoke;
@@ -178,12 +178,11 @@ p {
         }
       }
     }
-    
   }
   #mainLogo {
     margin-left: 266px;
   }
-  .mobileIcons{
+  .mobileIcons {
     display: none;
   }
 }
@@ -261,7 +260,7 @@ hr {
   margin-bottom: 30px;
 }
 
-#imgwall {
+.imgwall {
   display: grid;
   /* grid-template-columns: repeat(auto-fill,minmax(50%,1fr)); */
   grid-template-columns: repeat(1, 1fr);
@@ -296,11 +295,11 @@ body.fade-out {
 .caption {
   display: none;
 }
-.leftTop{
-  max-height:70px;
+.leftTop {
+  max-height: 70px;
 }
 .centerTop {
-  max-height:70px;
+  max-height: 70px;
   margin-top: 10px;
   font-family: 'Roboto Mono', monospace;
   span {
@@ -400,7 +399,7 @@ body.fade-out {
     display: block !important;
     margin-left: 10px;
   }
-  #imgwall {
+  .imgwall {
     display: grid;
     /* grid-template-columns: repeat(auto-fill,minmax(50%,1fr)); */
     grid-template-columns: repeat(1, 1fr);
@@ -459,22 +458,21 @@ body.fade-out {
     #centerInfo {
       font-size: 0.72em;
 
-      #subtitle{
-        font-size:1.5em;
+      #subtitle {
+        font-size: 1.5em;
       }
       #playContainer {
         margin-left: 43px;
         margin-top: 20px;
       }
-      
     }
     #mainLogo {
       width: 200px;
       margin-left: 50px;
     }
-    .mobileIcons{
+    .mobileIcons {
       display: flex;
-      a{
+      a {
         margin: auto;
       }
     }
@@ -482,7 +480,7 @@ body.fade-out {
 }
 /* desktop or bigger screens */
 @media (min-width: 1200px) {
-  #imgwall {
+  .imgwall {
     display: grid;
     /* grid-template-columns: repeat(auto-fill,minmax(50%,1fr)); */
     grid-template-columns: repeat(2, 1fr);
@@ -499,7 +497,6 @@ body.fade-out {
     height: 650px;
     object-fit: cover;
   }
-  
 }
 
 /* for large screens */
@@ -508,16 +505,14 @@ body.fade-out {
     margin-left: auto;
     margin-right: auto;
   }
-  #centerWrapper{
-    top:30%; 
+  #centerWrapper {
+    top: 30%;
   }
   .thumbnails {
     max-width: 1720px;
     height: 1000px;
   }
-  #imgwall {
+  .imgwall {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  
 }

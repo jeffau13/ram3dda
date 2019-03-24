@@ -60,6 +60,7 @@
   .projectDesc {
     font-weight: 100;
     font-size: 0.7em;
+    margin-top: -20px;
   }
 }
 
@@ -77,9 +78,11 @@
     grid-gap: 0px;
     margin: 0px auto 0px auto;
     .projectLink {
-      // border: 2px solid white;
       border: none;
       height: 15px;
+    }
+    .projectLink:hover {
+      border: none;
     }
     a {
       padding: 5px;

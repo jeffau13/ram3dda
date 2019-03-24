@@ -72,6 +72,7 @@
 .projectTitle .projectDesc {
   font-weight: 100;
   font-size: 0.7em;
+  margin-top: -20px;
 }
 
 .endpoint {
@@ -93,6 +94,9 @@
   .projectMenu .projectLink {
     border: none;
     height: 15px;
+  }
+  .projectMenu .projectLink:hover {
+    border: none;
   }
   .projectMenu a {
     padding: 5px;

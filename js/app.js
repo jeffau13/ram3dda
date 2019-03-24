@@ -1,11 +1,9 @@
 //calls light Gallery and sets options
 $(document).ready(function() {
-
-  //loading 
-  setTimeout(function(){
-		$('body').addClass('loaded');
+  //loading
+  setTimeout(function() {
+    $('body').addClass('loaded');
   }, 3500);
-  
 
   //set lightGallery calls:
   try {
@@ -15,7 +13,7 @@ $(document).ready(function() {
       .destroy(true);
   } catch (ex) {}
 
-  $('#imgwall').lightGallery({
+  $('.imgwall').lightGallery({
     thumbnail: false,
     showThumbByDefault: false,
     fullScreen: true,
@@ -35,7 +33,7 @@ $(document).ready(function() {
     counter: false,
     animateThumb: false,
     videoMaxWidth: '85%',
-    vimeoPlayerParams: { autoplay: true}
+    vimeoPlayerParams: { autoplay: true }
   });
 });
 
@@ -45,7 +43,7 @@ var overlay = document.getElementById('overlay');
 const closeMenu = document.getElementById('close-menu');
 const openMenu = document.getElementById('open-menu');
 const wrapper = document.getElementById('wrapper');
-const centerWrapper=document.getElementById('centerWrapper');
+const centerWrapper = document.getElementById('centerWrapper');
 const topbar = document.getElementById('topbar');
 const root = document.getElementsByTagName('html')[0];
 const current = window.location.href;
@@ -67,8 +65,8 @@ window.addEventListener('load', e => {
 document.getElementById('open-menu').addEventListener('click', function() {
   wrapper.classList.add('hide');
   topbar.classList.add('hide');
-  if(centerWrapper){
-  centerWrapper.classList.add('hide');
+  if (centerWrapper) {
+    centerWrapper.classList.add('hide');
   }
   // document.getElementsByTagName('header').classList.add('hide');
   // els.classList.add('selected');
@@ -86,37 +84,33 @@ closeMenu.addEventListener('click', function() {
   overlay.classList.add('close-menu');
   topbar.classList.remove('hide');
   wrapper.classList.remove('hide');
-  if(centerWrapper){
-  centerWrapper.classList.remove('hide');
+  if (centerWrapper) {
+    centerWrapper.classList.remove('hide');
   }
   document.body.classList.remove('set-background-blueish');
   document.body.classList.remove('lock-scroll');
   root.classList.remove('lock-scroll');
 });
 
-// -- nav hides/unhide on scroll:
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("topbar").style.top = "0";
-//   } else {
-//     document.getElementById("topbar").style.top = "-100px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
-
 // Smooth Scrolling
-$('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(function() {
-  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-    if (target.length) {
-      $('html,body').animate({
-        scrollTop: target.offset().top
-      }, 1000);
-      return false;
+$('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(
+  function() {
+    if (
+      location.pathname.replace(/^\//, '') ==
+        this.pathname.replace(/^\//, '') &&
+      location.hostname == this.hostname
+    ) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate(
+          {
+            scrollTop: target.offset().top
+          },
+          1000
+        );
+        return false;
+      }
     }
   }
-});
-
+);
