@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contact</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link
       rel="shortcut icon"
       href="assets/avatar/favicon-32x32.png"
@@ -22,10 +24,12 @@
       rel="stylesheet"
     />
     <link href="css/main.css" rel="stylesheet" />
-    <link href="css/loading.css" rel="stylesheet" />
     <link href="css/overlay.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
     <link href="./css/textScramble.css" rel="stylesheet" />
-    <link href="./css/gallery.css" rel="stylesheet" />
+    
+    
+    
   </head>
 
   <body>
@@ -141,7 +145,71 @@
       <!----------------------------END OF NAV & HEADER SECTION --------------------------->
     
       <div id="wrapper">
-        
+        <form id="contact-form" method="post" action="https://formcarry.com/s/qHNOqBH7FHN" role="form">
+
+          <div class="messages"></div>
+      
+          <div class="controls">
+      
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_name">Name</label>
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter yourname *" required="required" data-error="Firstname is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                 
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_email">Email *</label>
+                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="form_need">Please specify your need *</label>
+                      <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                          <option value="No Type">Please Select From This List:</option>
+                          <option value="Commissions/Business Inquiry">Commissions/Business Inquiry</option>
+                          <option value="Question">Question</option>
+                          <option value="Saying Hi">Just saying hi!</option>
+                          <option value="Other">Other</option>
+                      </select>
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <label for="form_message">Message *</label>
+                          <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                      <input type="submit" class="btn btn-muted btn-primary" value="Send message">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <p class="text-muted">
+                         
+
+                  </div>
+              </div>
+          </div>
+      
+      </form>
+
+      
       </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -157,6 +225,7 @@
     plugins -->
   <!-- <script src="js/lg-thumbnail.min.js"></script> -->
   <!-- <script src="js/lg-fullscreen.min.js"></script> -->
-  <script src=./js/textScramble.js> </script> <script src="js/app.js"></script>>
+  <script src=./js/textScramble.js> </script> <script src="js/app.js"></script>
+  
   </body>
 </html>
