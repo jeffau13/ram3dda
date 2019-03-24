@@ -20,3 +20,16 @@
     margin-top: -20px;
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  .projectTitle {
+    width: 300px;
+    .projectName {
+      font-size: 36px;
+    }
+    .projectDesc {
+      font-size: 12px;
+      //   line-height:0.1em;
+    }
+  }
+}

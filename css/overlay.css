@@ -231,28 +231,18 @@ nav .emailBox span {
     margin-top: 0px;
   }
   nav ul span {
-    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
     font-size: 0.8em;
   }
   nav .nav-link {
     font-size: 1.3em;
-    margin-left: 50px;
   }
   nav li {
     margin-bottom: 10px;
   }
   nav li .nav-desc {
     font-size: 0.8em;
-    margin-left: 50px;
-  }
-  nav .emailbox {
-    width: 280px;
-  }
-  nav #email {
-    font-family: 'Roboto Mono';
-    font-weight: 100;
-    margin-left: 0px !important;
-    font-size: 1em;
+    margin-left: 20px;
   }
   .close-btn {
     margin-top: 8px;

@@ -179,29 +179,19 @@ nav {
 
       margin-top: 0px;
       span {
-        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
         font-size: 0.8em;
       }
     }
     .nav-link {
       font-size: 1.3em;
-      margin-left: 50px;
     }
     li {
       .nav-desc {
         font-size: 0.8em;
-        margin-left: 50px;
+        margin-left: 20px;
       }
       margin-bottom: 10px;
-    }
-    .emailbox {
-      width: 280px;
-    }
-    #email {
-      font-family: 'Roboto Mono';
-      font-weight: 100;
-      margin-left: 0px !important;
-      font-size: 1em;
     }
   }
   .close-btn {

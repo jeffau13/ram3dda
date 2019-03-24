@@ -17,4 +17,50 @@ label {
   background-color: #444444;
   border: none;
 }
+
+#topbar {
+  background-color: #222222;
+}
+
+.projectTitle {
+  font-family: 'Roboto Mono';
+  font-size: 2em;
+  width: 1000px;
+  margin: 0px auto;
+  padding-bottom: 25px;
+  color: white;
+}
+
+.projectTitle .projectName {
+  width: 100%;
+  font-size: 2em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.projectTitle .projectDesc {
+  font-weight: 100;
+  font-size: 0.7em;
+  margin-top: -20px;
+}
+
+.projectTitle .projectDesc a:hover {
+  text-decoration: none;
+}
+
+/* Mobile View (portrait) ----------- */
+@media only screen and (max-width: 1200px) {
+  #contact-form {
+    max-width: 90%;
+  }
+  .projectTitle {
+    width: 300px;
+  }
+  .projectTitle .projectName {
+    font-size: 36px;
+  }
+  .projectTitle .projectDesc {
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=contact.css.map */

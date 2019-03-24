@@ -35,7 +35,7 @@
   <body>
     <!----------------------------NAV & HEADER SECTION --------------------------->
 
-      <nav id="overlay">
+    <nav id="overlay">
         <!-- <img src="assets/close.svg" class="close-btn" id="close-menu" /> -->
         <i class="fas fa-times fa-3x close-btn icon" id="close-menu"></i>
 
@@ -46,15 +46,14 @@
           </li>
 
           <li>
-            <a class="nav-link current" id="NavSiege" href="projects.html"
+            <a class="nav-link" id="NavSiege" href="projects.html"
               >PROJECTS</a
             >
-            <span class="nav-desc">3D Renders and other projects</span>
+            <span class="nav-desc">3D Renders and Animations</span>
           </li>
           <li>
             <a class="nav-link" id="NavVideo" href="tutorials.html"
-              >TUTORIALS</a
-            >
+              >TUTORIALS</a>
             <span class="nav-desc">A series of tutorials I have produced</span>
           </li>
           <li>
@@ -63,8 +62,9 @@
           </li>
           <li>
             <a class="nav-link" id="NavPrints" href="contact.html">Contact</a>
-            <span class="nav-desc">Where you can contact me!</span>
+            <span class="nav-desc">Get in touch with me!</span>
           </li>
+        
 
           <li id="contacts">
             <div class="iconbar">
@@ -85,14 +85,8 @@
                 href="https://www.dropbox.com/sh/mieducoo5jen58p/AAClJuRUwT5-QyfUI6I_7S0qa?dl=0"
                 ><i class="fab fa-dropbox fa-lg icons"></i
               ></a>
+            </ul>
             </div>
-            <!-- 
-          <br>
-          <div class='emailBox'>
-            <span>For commissions or other business inqueries, please email:</span>
-            <a href="mailto:rossmorris1400@gmail.com" class="nav-link email" id="email">
-              rossmorris1400@gmail.com</a>
-          </div> -->
           </li>
         </ul>
       </nav>
@@ -145,12 +139,14 @@
       <!----------------------------END OF NAV & HEADER SECTION --------------------------->
     
       <div id="wrapper">
-        <form id="contact-form" method="post" action="https://formcarry.com/s/qHNOqBH7FHN" role="form">
 
+          <div class =projectTitle> <h1 class="projectName">Get in touch </h1></br>
+            <p class ="projectDesc">Feel free to reach out to me on <a href='https://twitter.com/ram3dda'>twitter</a>, via 
+              <a href = "mailto:rossmorris1400@gmail.com" id="email">email</a>, or simply fill out the contact form below: </p></div>
+
+        <form id="contact-form" method="post" action="https://formcarry.com/s/qHNOqBH7FHN" role="form">
           <div class="messages"></div>
-      
           <div class="controls">
-      
               <div class="row">
                   <div class="col-md-6">
                       <div class="form-group">
@@ -168,15 +164,14 @@
                           <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
                           <div class="help-block with-errors"></div>
                       </div>
-                  </div>
-                  
+                  </div>                  
               </div>
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
                       <label for="form_need">Please specify your need *</label>
                       <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                          <option value="No Type">Please Select From This List:</option>
+                          <option value="No Type">Please Select One:</option>
                           <option value="Commissions/Business Inquiry">Commissions/Business Inquiry</option>
                           <option value="Question">Question</option>
                           <option value="Saying Hi">Just saying hi!</option>
@@ -200,16 +195,11 @@
               </div>
               <div class="row">
                   <div class="col-md-12">
-                      <p class="text-muted">
-                         
-
+                      <p class="text-muted">                       
                   </div>
               </div>
           </div>
-      
       </form>
-
-      
       </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

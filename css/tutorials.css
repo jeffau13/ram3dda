@@ -23,4 +23,16 @@
   font-size: 0.7em;
   margin-top: -20px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .projectTitle {
+    width: 300px;
+  }
+  .projectTitle .projectName {
+    font-size: 36px;
+  }
+  .projectTitle .projectDesc {
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=tutorials.css.map */
