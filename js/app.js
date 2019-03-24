@@ -58,10 +58,10 @@ function getVh() {
   return h;
 }
 
-document.body.classList.add('fade-out');
-window.addEventListener('load', e => {
-  document.body.classList.remove('fade-out');
-});
+// document.body.classList.add('fade-out');
+// window.addEventListener('load', e => {
+//   document.body.classList.remove('fade-out');
+// });
 
 document.getElementById('open-menu').addEventListener('click', function() {
   wrapper.classList.add('hide');

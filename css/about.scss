@@ -1,0 +1,52 @@
+#wrapper {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+}
+.centered {
+  img {
+    width: 300px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+}
+.right {
+  .centered {
+    color: white;
+    font-family: 'Roboto Mono';
+    font-weight: 100;
+  }
+  .lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+}
+
+/*  Mobile (Portrait) */
+@media only screen and (max-width: 1200px) {
+  #wrapper {
+    grid-template-columns: 1fr;
+    padding-bottom: 100px;
+  }
+  .right {
+    .lists {
+      grid-template-columns: 1fr;
+    }
+  }
+  .horizontalLogo {
+    display: none;
+  }
+}
