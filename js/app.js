@@ -21,7 +21,8 @@ $(document).ready(function() {
     mousewheel: false,
     subHtmlSelectorRelative: true,
     counter: false,
-    animateThumb: false
+    animateThumb: false,
+    videoMaxWidth: '85%'
   });
   $('#playContainer').lightGallery({
     thumbnail: false,
