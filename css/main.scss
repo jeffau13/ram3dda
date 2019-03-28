@@ -109,18 +109,22 @@ p {
 
   margin-left: -600px; /* Negative half of width. */
   #centerInfo {
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 2.5em;
+
     // margin-top:20%;
-    text-shadow: 2px 4px 0px #59595a;
-    h1 {
+    #mainTitle {
       margin-bottom: 5px;
+      font-family: 'roboto-condensed', sans-serif;
+      font-weight: 500;
+      font-style: normal;
     }
     #subtitle {
-      color: whitesmoke;
+      color: white;
       text-align: center;
-      font-family: 'Roboto Mono';
-      font-weight: 100;
+      font-family: 'roboto-condensed', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.5em;
     }
 
     .circle {
