@@ -135,8 +135,10 @@ p {
 }
 
 #centerWrapper #centerInfo #playContainer {
-  margin-left: 490px;
+  margin-left: 440px;
   margin-top: 20px;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
 }
 
 #centerWrapper #centerInfo #playContainer .playBut {
